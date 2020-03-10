@@ -1,0 +1,52 @@
+@font-face {
+    font-family: lato-black;
+    src: url('fonts/lato-black.ttf');
+}
+@font-face {
+    font-family: lato-bold;
+    src: url('fonts/lato-bold.ttf');
+}
+@font-face {
+    font-family: lato-light;
+    src: url('fonts/lato-light.ttf');
+}
+@font-face {
+    font-family: lato-reg;
+    src: url('fonts/lato-regular.ttf');
+}
+@font-face {
+    font-family: mgopen;
+    src: url('fonts/mgopen-modata-regular.ttf');
+}
+@font-face {
+    font-family: raleway-bold;
+    src: url('fonts/raleway-bold.ttf');
+}
+@font-face {
+    font-family: raleway-medium;
+    src: url('fonts/raleway-medium.ttf');
+}
+@font-face {
+    font-family: raleway-reg;
+    src: url('fonts/raleway-regular.ttf');
+}
+@font-face {
+    font-family: raleway-semibold;
+    src: url('fonts/raleway-semibold.ttf');
+}
+@font-face {
+    font-family: myriad-reg;
+    src: url('fonts/myriad-reg.otf');
+}
+body{
+    background-color: white;
+    font-size: 16px;
+    color: #fff;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+}

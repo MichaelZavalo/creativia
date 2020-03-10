@@ -354,11 +354,199 @@ header .container {
 }
 
 /*draft*/
-.container-portfolio {
-  width: 100%;
+.container-portfolio-one {
   margin-top: 100px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 4fr 3fr 4fr 3fr;
+  height: 350px;
+}
+.container-portfolio-one .money {
+  background-color: #f39943;
+  position: relative;
+}
+.container-portfolio-one .money img {
+  position: relative;
+  top: 35%;
+  left: 25%;
+  z-index: 10;
+}
+.container-portfolio-one .money::after {
+  content: "";
+  position: absolute;
+  width: 32%;
+  height: 104px;
+  top: 45%;
+  left: 68%;
+  z-index: 5;
+  background-image: url("../media/portfolio/money-shadow.png");
+  background-repeat: no-repeat;
+}
+.container-portfolio-one .bank {
+  background-color: #3782aa;
+  position: relative;
+}
+.container-portfolio-one .bank img {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  z-index: 10;
+}
+.container-portfolio-one .bank::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 110px;
+  top: 42.8%;
+  left: 80%;
+  z-index: 5;
+  background-image: url("../media/portfolio/bank-shadow.png");
+  background-repeat: no-repeat;
+}
+.container-portfolio-one .flower {
+  background-color: #ef5d88;
+  position: relative;
+}
+.container-portfolio-one .flower img {
+  position: absolute;
+  top: 27%;
+  left: 25%;
+  z-index: 10;
+}
+.container-portfolio-one .flower::after {
+  content: "";
+  position: absolute;
+  width: 37%;
+  height: 110px;
+  top: 46.8%;
+  left: 62%;
+  z-index: 5;
+  background-image: url("../media/portfolio/flower-shadow.png");
+  background-repeat: no-repeat;
+}
+.container-portfolio-one .cards {
+  background-color: #f6f0e0;
+  position: relative;
+}
+.container-portfolio-one .cards img {
+  position: absolute;
+  top: 27%;
+  left: 25%;
+  z-index: 10;
+}
+.container-portfolio-one .cards::after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 110px;
+  top: 49.5%;
+  left: 87%;
+  z-index: 5;
+  background-image: url("../media/portfolio/cards-shadow.png");
+  background-repeat: no-repeat;
+}
+.container-portfolio-one div:hover::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.container-portfolio-two {
+  display: grid;
+  grid-template-columns: 3fr 4fr 3fr 4fr;
+  height: 350px;
+  padding-bottom: 100px;
+}
+.container-portfolio-two .calculator {
+  background-color: #56cc82;
+  position: relative;
+}
+.container-portfolio-two .calculator img {
+  position: relative;
+  top: 29%;
+  left: 25%;
+  z-index: 10;
+}
+.container-portfolio-two .calculator::after {
+  content: "";
+  position: absolute;
+  width: 38%;
+  height: 125px;
+  top: 43.8%;
+  left: 62%;
+  z-index: 5;
+  background-image: url("../media/portfolio/calculator-shadow.png");
+  background-repeat: repeat;
+}
+.container-portfolio-two .converter {
+  background-color: #95a5a5;
+  position: relative;
+}
+.container-portfolio-two .converter img {
+  position: absolute;
+  top: 29%;
+  left: 25%;
+  z-index: 10;
+}
+.container-portfolio-two .converter::after {
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 112px;
+  top: 44.8%;
+  left: 65%;
+  z-index: 5;
+  background-image: url("../media/portfolio/converter-shadow.png");
+  background-repeat: repeat;
+}
+.container-portfolio-two .wallet {
+  background-color: #24b0c9;
+  position: relative;
+}
+.container-portfolio-two .wallet img {
+  position: absolute;
+  top: 27%;
+  left: 25%;
+  z-index: 10;
+}
+.container-portfolio-two .wallet::after {
+  content: "";
+  position: absolute;
+  width: 19%;
+  height: 115px;
+  top: 45.5%;
+  left: 81%;
+  z-index: 5;
+  background-image: url("../media/portfolio/wallet-shadow.png");
+  background-repeat: no-repeat;
+}
+.container-portfolio-two .check {
+  background-color: #fa8562;
+  position: relative;
+}
+.container-portfolio-two .check img {
+  position: absolute;
+  top: 31.5%;
+  left: 25%;
+  z-index: 10;
+}
+.container-portfolio-two .check::after {
+  content: "";
+  position: absolute;
+  width: 48%;
+  height: 92px;
+  top: 48.8%;
+  left: 69%;
+  z-index: 5;
+  background-image: url(../media/portfolio/check-shadow.png);
+  background-repeat: repeat;
+}
+.container-portfolio-two div:hover {
+  cursor: pointer;
 }
 
 .wr-feature .container {

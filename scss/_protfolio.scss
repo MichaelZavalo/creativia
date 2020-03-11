@@ -50,6 +50,34 @@
             left: 25%;
             z-index: 10;
         }
+        .active-item {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 15;
+            background-color: rgba(0, 0, 0, 0.9);
+            img {
+                position: absolute;
+                top: 46%;
+                left: 45%;
+            }
+            p {
+                font-family: lato-reg;
+                font-size: 16px;
+                color: #fff;
+                position: absolute;
+                top: 55%;
+                left: 37%;
+            }
+        }
+        
+    }
+    .money:hover .active-item {
+        display: block;
+        cursor: pointer;
     }
     .money::after {
         content: "";
@@ -71,6 +99,33 @@
             left: 25%;
             z-index: 10;
         }
+        .active-item {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 15;
+            background-color: rgba(0, 0, 0, 0.9);
+            img {
+                position: absolute;
+                top: 46%;
+                left: 48%;
+            }
+            p {
+                font-family: lato-reg;
+                font-size: 16px;
+                color: #fff;
+                position: absolute;
+                top: 55%;
+                left: 37%;
+            }
+        }    
+    }
+    .bank:hover .active-item {
+        display: block;
+        cursor: pointer;
     }
     .bank::after {
         content: "";
@@ -92,17 +147,44 @@
             left: 25%;
             z-index: 10;
         }
+        .active-item {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 15;
+            background-color: rgba(0, 0, 0, 0.9);
+            img {
+                position: absolute;
+                top: 46%;
+                left: 45%;
+            }
+            p {
+                font-family: lato-reg;
+                font-size: 16px;
+                color: #fff;
+                position: absolute;
+                top: 55%;
+                left: 37%;
+            }
+        }    
+    }
+    .flower:hover .active-item {
+        display: block;
+        cursor: pointer;
     }
     .flower::after {
         content: "";
         position: absolute;
-        width: 37%;
-        height: 110px;
+        width: 38%;
+        height: 96px;
         top: 46.8%;
         left: 62%;
         z-index: 5;
         background-image: url('../media/portfolio/flower-shadow.png');
-        background-repeat: no-repeat;
+        background-repeat: repeat;
     }
     .cards {
         background-color: #f6f0e0;
@@ -113,28 +195,45 @@
             left: 25%;
             z-index: 10;
         }
+        .active-item {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 15;
+            background-color: rgba(0, 0, 0, 0.9);
+            img {
+                position: absolute;
+                top: 46%;
+                left: 48%;
+            }
+            p {
+                font-family: lato-reg;
+                font-size: 16px;
+                color: #fff;
+                position: absolute;
+                top: 55%;
+                left: 37%;
+            }
+        }    
+    }
+    .cards:hover .active-item {
+        display: block;
+        cursor: pointer;
     }
     .cards::after {
         content: "";
         position: absolute;
-        width: 25%;
+        width: 13%;
         height: 110px;
         top: 49.5%;
         left: 87%;
         z-index: 5;
         background-image: url('../media/portfolio/cards-shadow.png');
         background-repeat: no-repeat;
-    }
-    div:hover::before {
-        content: '';
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background-color: rgba(0,0,0,0.6);
-        cursor: pointer;
-    }
+    } 
 }
 .container-portfolio-two {
     display: grid;
@@ -150,6 +249,33 @@
             left: 25%;
             z-index: 10;
         }
+        .active-item {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 15;
+            background-color: rgba(0, 0, 0, 0.9);
+            img {
+                position: absolute;
+                top: 46%;
+                left: 48%;
+            }
+            p {
+                font-family: lato-reg;
+                font-size: 16px;
+                color: #fff;
+                position: absolute;
+                top: 55%;
+                left: 37%;
+            }
+        }    
+    }
+    .calculator:hover .active-item {
+        display: block;
+        cursor: pointer;
     }
     .calculator::after {
         content: "";
@@ -171,6 +297,33 @@
             left: 25%;
             z-index: 10;
         }
+        .active-item {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 15;
+            background-color: rgba(0, 0, 0, 0.9);
+            img {
+                position: absolute;
+                top: 46%;
+                left: 45%;
+            }
+            p {
+                font-family: lato-reg;
+                font-size: 16px;
+                color: #fff;
+                position: absolute;
+                top: 55%;
+                left: 37%;
+            }
+        }    
+    }
+    .converter:hover .active-item {
+        display: block;
+        cursor: pointer;
     }
     .converter::after {
         content: "";
@@ -192,6 +345,33 @@
             left: 25%;
             z-index: 10;
         }
+        .active-item {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 15;
+            background-color: rgba(0, 0, 0, 0.9);
+            img {
+                position: absolute;
+                top: 46%;
+                left: 48%;
+            }
+            p {
+                font-family: lato-reg;
+                font-size: 16px;
+                color: #fff;
+                position: absolute;
+                top: 55%;
+                left: 37%;
+            }
+        }    
+    }
+    .wallet:hover .active-item {
+        display: block;
+        cursor: pointer;
     }
     .wallet::after {
         content: "";
@@ -213,20 +393,43 @@
             left: 25%;
             z-index: 10;
         }
+        .active-item {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 15;
+            background-color: rgba(0, 0, 0, 0.9);
+            img {
+                position: absolute;
+                top: 46%;
+                left: 45%;
+            }
+            p {
+                font-family: lato-reg;
+                font-size: 16px;
+                color: #fff;
+                position: absolute;
+                top: 55%;
+                left: 37%;
+            }
+        }    
+    }
+    .check:hover .active-item {
+        display: block;
+        cursor: pointer;
     }
     .check::after {
         content: "";
         position: absolute;
-        width: 48%;
+        width: 31%;
         height: 92px;
         top: 48.8%;
         left: 69%;
         z-index: 5;
         background-image: url(../media/portfolio/check-shadow.png);
         background-repeat: repeat;
-    }
-    div:hover{
-        cursor: pointer;
-        
     }
 }

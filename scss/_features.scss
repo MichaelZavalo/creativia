@@ -1,37 +1,87 @@
 .wr-feature {
+    background-image: url('../media/products-features/mobile-photo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    a { 
+        text-decoration: none;
+        font-family: raleway-medium;
+        font-size: 20px;
+        color: #262626;
+    }
     .container{
+        align-items: center;
+        flex-direction: column;
         position: relative;
-        ::before{
-            content: url('/programming/project-on-27/creativia/media/portfolio/scroll-bar-sexangel.png');
-            position: absolute;
-            background-repeat: no-repeat;
-            display: block;
-            top: 0;
-            left: 50%;
-        }
         .feature-head {
             display: flex;
             align-items: center;
             flex-direction: column;
             margin-top: 100px;
             width: 100%;
+            position: relative;
+            img {
+                position: absolute;
+                top: -109px;
+                left: 27.5%;
+            }
         }
-            h2 {
-                font-family: raleway-bold;
-                color: #262626;
-                margin-bottom: 0px;
-                font-size: 30px;
-                margin-top: 0px;
+        h2 {
+            font-family: raleway-bold;
+            color: #262626;
+            margin-bottom: 0px;
+            font-size: 30px;
+            margin-top: 0px;
+        }
+        span {
+                color: #ff0036;
             }
-            span {
-                    color: #ff0036;
-                }
-            h3 {
-                font-family: lato-bold;
-                color: #262626;
-                margin-bottom: 0px;
-                margin-top: 50px;
-                font-size: 16px;
+        h3 {
+            font-family: lato-bold;
+            color: #262626;
+            margin-bottom: 0px;
+            margin-top: 50px;
+            font-size: 16px;
+        }
+    }
+    .btns-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 175px;
+        width: 100%;
+        .left-side{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            .btn-left {
+                width:370px;
+                height: 50px;
+                border: 1px solid #f7f7f7;
             }
+        }
+        .right-side{
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            .btn-right{
+                width:370px;
+                height: 50px;
+                border: 1px solid #f7f7f7;
+            }
+        }
+    }
+    .btn-free-psd {
+        display: inline-flex;
+        justify-content: center;
+        width: 170px;
+        height: 50px;
+        margin-bottom: 175px;
+        margin-top: 185px;
+        color: #f7f7f7;
+        align-items: center;
+        background-color: #131313;
+    }
+    .btn-free-psd:hover {
+        background-color: #ff0036;
     }
 }

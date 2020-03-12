@@ -1,0 +1,137 @@
+.wr-clients {
+    background-image: url('../media/clints/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        flex-direction: column;
+        .clients-head {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 94px;
+            width: 100%;
+            position: relative;
+            h2 {
+                font-family: raleway-bold;
+                color: #fff;
+                margin-bottom: 0px;
+                font-size: 30px;
+                margin-top: 0px;
+            }
+            span {
+                    color: #ff0036;
+                }
+            h3 {
+                font-family: lato-bold;
+                color: #a4a4a4;
+                margin-bottom: 0px;
+                margin-top: 50px;
+                font-size: 16px;
+            }
+        }
+    }    
+}
+.clients-main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    .happy-clients {
+        width: 570px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+            font-family: raleway-medium;
+            font-size: 20px;
+            color: #fff;
+            margin: 0px;
+        }
+        p {
+            color: #a4a4a4;
+            font-family: lato-reg;
+            font-size: 16px;
+            margin: 0px;
+            margin-top: 50px;
+            text-align: justify;
+            text-align-last: center;
+            line-height: 1.2;
+        }
+    }
+    .instruments {
+        width: 570px;
+        display: flex;
+        a {
+            text-decoration: none;
+            background-color: #fbfbfb;
+            width: 270px;
+            height: 115px;
+            box-shadow: inset 0px 0px 68px 0px rgba(0,0,0,0.75);
+            align-items: center;
+        }
+        .graphic {
+            display: inline-flex;
+            justify-content: flex-end;
+            background-position-x: 28%;
+            background-position-y: 61%;
+            background-image: url('../media/clints/graphicriver.png');
+            background-repeat: no-repeat;
+            span {
+                font-family: mgopen;
+                font-size: 24.16px;
+                color: #292626;
+                margin-right: 49px;
+            }
+        }
+        .photo {
+            display: inline-flex;
+            justify-content: flex-end;
+            background-position-x: 32%;
+            background-position-y: 53%;
+            background-image: url('../media/clints/photodune.png');
+            background-repeat: no-repeat;
+            margin-top: 30px;
+            span {
+                font-family: mgopen;
+                font-size: 24.16px;
+                color: #292626;
+                margin-right: 56px;
+            }
+        }
+        .video {
+            display: inline-flex;
+            justify-content: flex-end;
+            background-position-x: 32%;
+            background-position-y: 53%;
+            background-image: url('../media/clints/videohive.png');
+            background-repeat: no-repeat;
+            span {
+                font-family: mgopen;
+                font-size: 24.16px;
+                color: #292626;
+                margin-right: 32px;
+            }
+        }
+        .code {
+            display: inline-flex;
+            justify-content: flex-end;
+            background-position-x: 30.5%;
+            background-position-y: 50%;
+            background-image: url('../media/clints/codecanyon.png');
+            background-repeat: no-repeat;
+            margin-top: 30px;
+            span {
+                font-family: mgopen;
+                font-size: 24.16px;
+                color: #292626;
+                margin-right: 22px;
+            }
+        }
+        .left-column {
+            margin-right: 15px;
+        }
+        .right-column {
+            margin-left: 15px;
+        };
+    }
+    
+}

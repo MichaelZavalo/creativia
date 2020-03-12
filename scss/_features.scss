@@ -1,14 +1,15 @@
 .wr-feature {
-    background-image: url('../media/products-features/mobile-photo.png');
+    background-image: url('../media/products-features/background.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-x: 50%;
+    background-position-y: 72%;
     a { 
         text-decoration: none;
         font-family: raleway-medium;
         font-size: 20px;
         color: #262626;
     }
-    .container{
+    .container {
         align-items: center;
         flex-direction: column;
         position: relative;
@@ -43,30 +44,65 @@
             font-size: 16px;
         }
     }
-    .btns-container{
+    .btns-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 175px;
+        margin-top: 157px;
         width: 100%;
-        .left-side{
+        .left-side {
             display: flex;
             align-items: flex-start;
             flex-direction: column;
             .btn-left {
                 width:370px;
-                height: 50px;
-                border: 1px solid #f7f7f7;
+                height: 52px;
+                border: 1px solid #e1e1e1;
+                box-sizing: border-box;
+                margin-top: 23px;
+                display: inline-flex;
+                justify-content: flex-end;
+                align-items: center;
+                background-image:url('../media/products-features/pass-icon.png') ;
+                background-repeat: no-repeat;
+                background-position-x: 310px;
+                background-position-y: center;
+            }
+            p {
+                margin-right: 75px;
+            }
+            .btn-left:hover {
+                background-image: url('../media/products-features/active-icon.png');
+                background-color: #ff0036;
+                color: #fff;
             }
         }
-        .right-side{
+        .right-side {
             display: flex;
             align-items: flex-end;
             flex-direction: column;
-            .btn-right{
-                width:370px;
+            .btn-right {
+                width:368px;
                 height: 50px;
-                border: 1px solid #f7f7f7;
+                border: 1px solid #e1e1e1;
+                margin-top: 23px;
+                display: inline-flex;
+                justify-content: flex-start;
+                align-items: center;
+                position: relative;
+                background-image:url('../media/products-features/pass-icon.png') ;
+                background-repeat: no-repeat;
+                background-repeat: no-repeat;
+                background-position-x: 20px;
+                background-position-y: center;
+            }
+            p {
+                margin-left: 75px;
+            }
+            .btn-right:hover {
+                background-image: url('../media/products-features/active-icon.png');
+                background-color: #ff0036;
+                color: #fff;
             }
         }
     }
@@ -75,11 +111,11 @@
         justify-content: center;
         width: 170px;
         height: 50px;
-        margin-bottom: 175px;
+        margin-bottom: 180px;
         margin-top: 185px;
         color: #f7f7f7;
         align-items: center;
-        background-color: #131313;
+        background-color: #393939;
     }
     .btn-free-psd:hover {
         background-color: #ff0036;

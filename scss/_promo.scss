@@ -8,13 +8,19 @@ header {
     height: 67px;
     background-color: rgba(0, 0, 0, 0.5);
     .logo { 
-        padding-left: 65px;
-        padding-bottom: 8px;
+        background-image: url('../media/why-creativia/logo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 66px;
+        margin-bottom: 11px;
         vertical-align: middle;
         z-index: 15;
+        width: 120px;
+        height: 23px;
     }
-    a:hover {
+    .logo:hover {
         cursor: pointer;
+        background-image: url('../media/why-creativia/logo-active.png');
     }
     .hexagon {
         position: absolute;

@@ -32,7 +32,7 @@
     }    
 }
 .clients-main {
-    margin-top: 100px;
+    margin: 100px 0;
     display: flex;
     justify-content: space-between;
     .happy-clients {
@@ -51,10 +51,46 @@
             font-family: lato-reg;
             font-size: 16px;
             margin: 0px;
-            margin-top: 50px;
+            margin-top: 40px;
             text-align: justify;
             text-align-last: center;
             line-height: 1.2;
+        }
+    }
+    .clients-slider { 
+        width: 120px;
+        height: 57px;
+        position: relative;
+        margin: 48px 0 0 0;
+        p {
+            margin:0;
+            margin-top: 14px;
+            font-family: raleway-bold;
+            font-size: 16px;
+            color: #ff0036;
+        }
+        .slick-dots {
+            bottom:-66px;
+        }
+        .slick-dots li { 
+            width: 8px;
+            height: 8px;
+            margin:0 2.5px;
+        }
+        .slick-dots li button {
+            background-color: #e0e0e0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 8px;
+        }
+        .slick-dots li button:hover {
+            background-color: #ff0036;
+            cursor: pointer;
+        }
+        img {
+            margin: 0 auto;
         }
     }
     .instruments {
@@ -67,6 +103,10 @@
             height: 115px;
             box-shadow: inset 0px 0px 68px 0px rgba(0,0,0,0.75);
             align-items: center;
+        }
+        a:hover span {
+            color: #ff0036;
+            cursor: pointer;
         }
         .graphic {
             display: inline-flex;
@@ -81,6 +121,7 @@
                 color: #292626;
                 margin-right: 49px;
             }
+            
         }
         .photo {
             display: inline-flex;
@@ -89,7 +130,7 @@
             background-position-y: 53%;
             background-image: url('../media/clints/photodune.png');
             background-repeat: no-repeat;
-            margin-top: 30px;
+            margin-top: 40px;
             span {
                 font-family: mgopen;
                 font-size: 24.16px;
@@ -118,7 +159,7 @@
             background-position-y: 50%;
             background-image: url('../media/clints/codecanyon.png');
             background-repeat: no-repeat;
-            margin-top: 30px;
+            margin-top: 40px;
             span {
                 font-family: mgopen;
                 font-size: 24.16px;

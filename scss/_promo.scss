@@ -60,15 +60,16 @@ header {
                 }
                 a:hover {
                     color: #fff;
+                    cursor: pointer;
                 }
                 .active-menu-item {
                     position: relative;
                 }
-                .active-menu-item::before {
+                .active-menu-item:hover:before {
                    content: "";
                    position: absolute;
                    bottom: 0;
-                   right: 13px;
+                   right: 20%;
                    width: 25px;
                    border: 1px solid #ff0036;
                 }

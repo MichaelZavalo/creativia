@@ -22,6 +22,17 @@ for (let i = 0; i < coll.length; i++) {
     })
 }
 
+$(document).ready(function () {
+    $('.clients-slider').slick(
+        {
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows:false,
+            dots:true,
+        }
+    );
+});
 /*coll.addEventListener('click', function () {
     document.querySelector('.collapsible').style.backgroundColo;
 });

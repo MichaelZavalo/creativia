@@ -1,0 +1,33 @@
+.wr-skills {
+    .container {
+        flex-direction: column;
+        .skills-head {  
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            position: relative;
+            h2 {
+                font-family: raleway-bold;
+                color: #262626;
+                margin-bottom: 0px;
+                font-size: 30px;
+                margin-top: 90px;
+            }
+            span {
+                color: #ff0036;
+            }
+            h3 {
+                font-family: lato-bold;
+                color: #505050;
+                margin-bottom: 0px;
+                margin-top: 50px;
+                font-size: 16px;
+            }
+            .decoration {
+                margin: 0 auto;
+                margin-top: 98px;
+            }
+        }
+    }
+}

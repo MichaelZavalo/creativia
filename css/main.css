@@ -65,15 +65,16 @@ header .container {
 }
 .nav-container a:hover {
   color: #fff;
+  cursor: pointer;
 }
 .nav-container .active-menu-item {
   position: relative;
 }
-.nav-container .active-menu-item::before {
+.nav-container .active-menu-item:hover:before {
   content: "";
   position: absolute;
   bottom: 0;
-  right: 13px;
+  right: 20%;
   width: 25px;
   border: 1px solid #ff0036;
 }
@@ -918,7 +919,7 @@ header .container {
 }
 
 .clients-main {
-  margin-top: 100px;
+  margin: 100px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -939,10 +940,46 @@ header .container {
   font-family: lato-reg;
   font-size: 16px;
   margin: 0px;
-  margin-top: 50px;
+  margin-top: 40px;
   text-align: justify;
   text-align-last: center;
   line-height: 1.2;
+}
+.clients-main .clients-slider {
+  width: 120px;
+  height: 57px;
+  position: relative;
+  margin: 48px 0 0 0;
+}
+.clients-main .clients-slider p {
+  margin: 0;
+  margin-top: 14px;
+  font-family: raleway-bold;
+  font-size: 16px;
+  color: #ff0036;
+}
+.clients-main .clients-slider .slick-dots {
+  bottom: -66px;
+}
+.clients-main .clients-slider .slick-dots li {
+  width: 8px;
+  height: 8px;
+  margin: 0 2.5px;
+}
+.clients-main .clients-slider .slick-dots li button {
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+}
+.clients-main .clients-slider .slick-dots li button:hover {
+  background-color: #ff0036;
+  cursor: pointer;
+}
+.clients-main .clients-slider img {
+  margin: 0 auto;
 }
 .clients-main .instruments {
   width: 570px;
@@ -955,6 +992,10 @@ header .container {
   height: 115px;
   box-shadow: inset 0px 0px 68px 0px rgba(0, 0, 0, 0.75);
   align-items: center;
+}
+.clients-main .instruments a:hover span {
+  color: #ff0036;
+  cursor: pointer;
 }
 .clients-main .instruments .graphic {
   display: inline-flex;
@@ -977,7 +1018,7 @@ header .container {
   background-position-y: 53%;
   background-image: url("../media/clints/photodune.png");
   background-repeat: no-repeat;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .clients-main .instruments .photo span {
   font-family: mgopen;
@@ -1006,7 +1047,7 @@ header .container {
   background-position-y: 50%;
   background-image: url("../media/clints/codecanyon.png");
   background-repeat: no-repeat;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .clients-main .instruments .code span {
   font-family: mgopen;
@@ -1048,6 +1089,127 @@ header .container {
   margin-bottom: 0px;
   margin-top: 50px;
   font-size: 16px;
+}
+.wr-teamwork .container .teamwork-head img {
+  position: absolute;
+  top: -103px;
+  left: 27.5%;
+}
+.wr-teamwork .teamwork-main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 98px;
+}
+.wr-teamwork .wayne, .wr-teamwork .srour, .wr-teamwork .doe, .wr-teamwork .de {
+  width: 270px;
+  height: 361px;
+  line-height: 0.74;
+  position: relative;
+}
+.wr-teamwork .wayne h3, .wr-teamwork .srour h3, .wr-teamwork .doe h3, .wr-teamwork .de h3 {
+  font-size: 20px;
+  color: #262626;
+  margin: 33px 0 0 0;
+}
+.wr-teamwork .wayne p, .wr-teamwork .srour p, .wr-teamwork .doe p, .wr-teamwork .de p {
+  color: #505050;
+  font-family: lato-reg;
+  font-size: 16px;
+  margin: 26px 0 35px 0;
+}
+.wr-teamwork .wayne .team-info, .wr-teamwork .srour .team-info, .wr-teamwork .doe .team-info, .wr-teamwork .de .team-info {
+  margin: 0;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wr-teamwork .wayne-hover, .wr-teamwork .srour-hover, .wr-teamwork .doe-hover, .wr-teamwork .de-hover {
+  display: none;
+  width: 270px;
+  height: 361px;
+  line-height: 0.74;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wr-teamwork .wayne-hover .social-networks, .wr-teamwork .srour-hover .social-networks, .wr-teamwork .doe-hover .social-networks, .wr-teamwork .de-hover .social-networks {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262626;
+}
+.wr-teamwork .wayne-hover .social-networks .facebook, .wr-teamwork .srour-hover .social-networks .facebook, .wr-teamwork .doe-hover .social-networks .facebook, .wr-teamwork .de-hover .social-networks .facebook {
+  content: url("../media/teamwork/facebook.png");
+  margin: 0 5px;
+}
+.wr-teamwork .wayne-hover .social-networks .google, .wr-teamwork .srour-hover .social-networks .google, .wr-teamwork .doe-hover .social-networks .google, .wr-teamwork .de-hover .social-networks .google {
+  content: url("../media/teamwork/google+.png");
+  margin: 0 5px;
+}
+.wr-teamwork .wayne-hover .social-networks .twitter, .wr-teamwork .srour-hover .social-networks .twitter, .wr-teamwork .doe-hover .social-networks .twitter, .wr-teamwork .de-hover .social-networks .twitter {
+  content: url("../media/teamwork/twitter.png");
+  margin: 0 5px;
+}
+.wr-teamwork .wayne-hover h3, .wr-teamwork .srour-hover h3, .wr-teamwork .doe-hover h3, .wr-teamwork .de-hover h3 {
+  font-size: 20px;
+  color: #ff0036;
+  margin: 33px 0 0 0;
+}
+.wr-teamwork .wayne-hover p, .wr-teamwork .srour-hover p, .wr-teamwork .doe-hover p, .wr-teamwork .de-hover p {
+  color: #505050;
+  margin: 26px 0 35px 0;
+  font-family: lato-reg;
+  font-size: 16px;
+}
+.wr-teamwork .wayne-hover .team-info-hover, .wr-teamwork .srour-hover .team-info-hover, .wr-teamwork .doe-hover .team-info-hover, .wr-teamwork .de-hover .team-info-hover {
+  margin: 0;
+  border: 1px solid #262626;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wr-teamwork .wayne:hover .wayne-hover, .wr-teamwork .srour:hover .srour-hover, .wr-teamwork .doe:hover .doe-hover, .wr-teamwork .de:hover .de-hover {
+  display: block;
+  cursor: pointer;
+}
+
+.wr-skills .container {
+  flex-direction: column;
+}
+.wr-skills .container .skills-head {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.wr-skills .container .skills-head h2 {
+  font-family: raleway-bold;
+  color: #262626;
+  margin-bottom: 0px;
+  font-size: 30px;
+  margin-top: 90px;
+}
+.wr-skills .container .skills-head span {
+  color: #ff0036;
+}
+.wr-skills .container .skills-head h3 {
+  font-family: lato-bold;
+  color: #505050;
+  margin-bottom: 0px;
+  margin-top: 50px;
+  font-size: 16px;
+}
+.wr-skills .container .skills-head .decoration {
+  margin: 0 auto;
+  margin-top: 98px;
 }
 
 /*# sourceMappingURL=main.css.map */

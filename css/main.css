@@ -195,7 +195,7 @@ header .container {
   font-family: lato-bold;
   color: #262626;
   margin-bottom: 0px;
-  margin-top: 50px;
+  margin-top: 38px;
   font-size: 16px;
 }
 
@@ -794,7 +794,7 @@ header .container {
 .wr-feature .container .feature-head img {
   position: absolute;
   top: -109px;
-  left: 27.5%;
+  left: 28%;
 }
 .wr-feature .container h2 {
   font-family: raleway-bold;
@@ -810,7 +810,7 @@ header .container {
   font-family: lato-bold;
   color: #262626;
   margin-bottom: 0px;
-  margin-top: 50px;
+  margin-top: 42px;
   font-size: 16px;
 }
 .wr-feature .btns-container {
@@ -920,7 +920,7 @@ header .container {
   font-family: lato-bold;
   color: #a4a4a4;
   margin-bottom: 0px;
-  margin-top: 50px;
+  margin-top: 38px;
   font-size: 16px;
 }
 
@@ -1093,7 +1093,7 @@ header .container {
   font-family: lato-bold;
   color: #505050;
   margin-bottom: 0px;
-  margin-top: 50px;
+  margin-top: 38px;
   font-size: 16px;
 }
 .wr-teamwork .container .teamwork-head img {
@@ -1210,7 +1210,7 @@ header .container {
   font-family: lato-bold;
   color: #505050;
   margin-bottom: 0px;
-  margin-top: 50px;
+  margin-top: 38px;
   font-size: 16px;
 }
 .wr-skills .container .skills-head .decoration {
@@ -1218,14 +1218,14 @@ header .container {
   margin-top: 98px;
 }
 .wr-skills .skills-main {
-  width: 100%;
   margin: 100px 0 100px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 .wr-skills .skills-main .photoshop, .wr-skills .skills-main .html, .wr-skills .skills-main .php, .wr-skills .skills-main .wordpress {
   width: 170px;
+  margin: 0 16.5px;
 }
 .wr-skills .skills-main img {
   padding: 0 10px 0 15px;
@@ -1273,7 +1273,7 @@ header .container {
   font-family: lato-bold;
   color: #a4a4a4;
   margin-bottom: 0px;
-  margin-top: 50px;
+  margin-top: 38px;
   font-size: 16px;
 }
 .wr-services .container .services-head .decoration {
@@ -1283,7 +1283,7 @@ header .container {
 .wr-services .services-main {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin: 100px 0;
 }
 .wr-services .first-column, .wr-services .second-column {
   width: 570px;
@@ -1296,18 +1296,53 @@ header .container {
   color: #a4a4a4;
   background-color: #343434;
   width: 100%;
-  padding: 27px 28px 27px 35px;
+  padding: 29px 28px 27px 35px;
   box-sizing: border-box;
-  margin: 42px 0 0 0;
+  margin: 43px 0 0 0;
+  line-height: 1.3;
 }
 .wr-services .first-column h4, .wr-services .second-column h4 {
   font-family: raleway-medium;
   font-size: 20px;
   color: #fff;
   padding-left: 100px;
-  margin: 80px 0 0 0;
+  margin: 0 0 0 0;
 }
-.wr-services .first-column .fa-wordpress-simple::before, .wr-services .second-column .fa-wordpress-simple::before {
+.wr-services .development {
+  position: relative;
+}
+.wr-services .development .fas {
+  font-weight: 600;
+}
+.wr-services .development .fa-code::before {
+  font-size: 32.5px;
+  box-sizing: border-box;
+  padding: 12px 17px 13px 13px;
+  color: #262626;
+  text-align: center;
+  background-image: url("../media/services/back-icon.png");
+  background-size: 70px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wr-services .development:hover {
+  cursor: pointer;
+}
+.wr-services .development:hover .fa-code::before {
+  color: #fff;
+  background-image: url("../media/services/development-active.png");
+}
+.wr-services .development:hover p {
+  color: #fff;
+  background-color: #3d2329;
+}
+.wr-services .wordpress {
+  position: relative;
+  margin-top: 59px;
+}
+.wr-services .wordpress .fa-wordpress-simple::before {
   font-size: 35px;
   box-sizing: border-box;
   padding: 12px 17px 10px 18px;
@@ -1317,11 +1352,175 @@ header .container {
   background-size: 70px;
   background-repeat: no-repeat;
   position: absolute;
-  top: 78px;
+  top: 0;
   left: 0;
 }
-.wr-services .wordpress {
+.wr-services .wordpress:hover {
+  cursor: pointer;
+}
+.wr-services .wordpress:hover .fa-wordpress-simple::before {
+  color: #fff;
+  background-image: url("../media/services/back-icon-active.png");
+}
+.wr-services .wordpress:hover p {
+  color: #fff;
+  background-color: #3d2329;
+}
+.wr-services .ui-ux {
   position: relative;
+  margin-top: 59px;
+}
+.wr-services .ui-ux .fas {
+  font-weight: 600;
+}
+.wr-services .ui-ux .fa-pencil-alt::before {
+  font-size: 35px;
+  box-sizing: border-box;
+  padding: 12px 17px 10px 18px;
+  color: #262626;
+  text-align: center;
+  background-image: url("../media/services/back-icon.png");
+  background-size: 70px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wr-services .ui-ux:hover {
+  cursor: pointer;
+}
+.wr-services .ui-ux:hover .fa-pencil-alt::before {
+  color: #fff;
+  background-image: url("../media/services/back-icon-active.png");
+}
+.wr-services .ui-ux:hover p {
+  color: #fff;
+  background-color: #3d2329;
+}
+.wr-services .html-css {
+  position: relative;
+}
+.wr-services .html-css .fa-html5::before {
+  font-size: 35px;
+  box-sizing: border-box;
+  padding: 12px 22px 10px 22px;
+  color: #262626;
+  text-align: center;
+  background-image: url("../media/services/back-icon.png");
+  background-size: 70px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wr-services .html-css:hover {
+  cursor: pointer;
+}
+.wr-services .html-css:hover .fa-html5::before {
+  color: #fff;
+  background-image: url("../media/services/back-icon-active.png");
+}
+.wr-services .html-css:hover p {
+  color: #fff;
+  background-color: #3d2329;
+}
+.wr-services .applications {
+  position: relative;
+  margin-top: 59px;
+}
+.wr-services .applications .fas {
+  font-weight: 600;
+}
+.wr-services .applications .fa-tablet-alt::before {
+  font-size: 35px;
+  box-sizing: border-box;
+  padding: 12px 20px 10px 19px;
+  color: #262626;
+  text-align: center;
+  background-image: url("../media/services/back-icon.png");
+  background-size: 70px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wr-services .applications:hover {
+  cursor: pointer;
+}
+.wr-services .applications:hover .fa-tablet-alt::before {
+  color: #fff;
+  background-image: url("../media/services/back-icon-active.png");
+}
+.wr-services .applications:hover p {
+  color: #fff;
+  background-color: #3d2329;
+}
+.wr-services .responsive-layout {
+  position: relative;
+  margin-top: 59px;
+}
+.wr-services .responsive-layout .fas {
+  font-weight: 600;
+}
+.wr-services .responsive-layout .fa-laptop::before {
+  font-size: 35px;
+  box-sizing: border-box;
+  padding: 12px 13px 10px 13px;
+  color: #262626;
+  text-align: center;
+  background-image: url("../media/services/back-icon.png");
+  background-size: 70px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wr-services .responsive-layout:hover {
+  cursor: pointer;
+}
+.wr-services .responsive-layout:hover .fa-laptop::before {
+  color: #fff;
+  background-image: url("../media/services/back-icon-active.png");
+}
+.wr-services .responsive-layout:hover p {
+  color: #fff;
+  background-color: #3d2329;
+}
+
+.wr-bestseller .container {
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.wr-bestseller .container .bestseller-head {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+}
+.wr-bestseller .container .bestseller-head img {
+  position: absolute;
+  top: -109px;
+  left: 28%;
+}
+.wr-bestseller .container h2 {
+  font-family: raleway-bold;
+  color: #262626;
+  margin-bottom: 0px;
+  font-size: 30px;
+  margin-top: 0px;
+}
+.wr-bestseller .container span {
+  color: #ff0036;
+}
+.wr-bestseller .container h3 {
+  font-family: lato-bold;
+  color: #262626;
+  margin-bottom: 0px;
+  margin-top: 39px;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,37 @@
+.wr-bestseller {
+    .container {
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        .bestseller-head {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 100px;
+            width: 100%;
+            position: relative;
+            img {
+                position: absolute;
+                top: -109px;
+                left: 28%;
+            }
+        }
+        h2 {
+            font-family: raleway-bold;
+            color: #262626;
+            margin-bottom: 0px;
+            font-size: 30px;
+            margin-top: 0px;
+        }
+        span {
+            color: #ff0036;
+        }
+        h3 {
+            font-family: lato-bold;
+            color: #262626;
+            margin-bottom: 0px;
+            margin-top: 39px;
+            font-size: 16px;
+        }
+    }
+}

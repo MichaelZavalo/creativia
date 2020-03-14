@@ -20,7 +20,7 @@
                 font-family: lato-bold;
                 color: #a4a4a4;
                 margin-bottom: 0px;
-                margin-top: 50px;
+                margin-top: 38px;
                 font-size: 16px;
             }
             .decoration {
@@ -32,7 +32,7 @@
     .services-main {
         display: flex;
         justify-content: space-between;
-        margin-top: 100px;
+        margin: 100px 0;
     }
     .first-column, .second-column {
         width: 570px;
@@ -44,17 +44,52 @@
             color: #a4a4a4;
             background-color: #343434;
             width: 100%;
-            padding: 27px 28px 27px 35px;
+            padding: 29px 28px 27px 35px;
             box-sizing: border-box;
-            margin: 42px 0 0 0;
+            margin: 43px 0 0 0;
+            line-height: 1.3;
         }
         h4 {
             font-family: raleway-medium;
             font-size: 20px;
             color: #fff;
             padding-left: 100px;
-            margin: 80px 0 0 0 ;
+            margin: 0 0 0 0 ;
         }
+    }
+    .development {
+        position: relative;
+        .fas {
+            font-weight: 600;
+        }
+        .fa-code::before {
+            font-size: 32.5px;
+            box-sizing: border-box;
+            padding: 12px 17px 13px 13px;
+            color: #262626;
+            text-align: center;
+            background-image: url('../media/services/back-icon.png');
+            background-size: 70px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .development:hover {    
+        cursor: pointer;
+        .fa-code::before {
+            color: #fff;
+            background-image: url('../media/services/development-active.png');
+        }
+        p {
+            color: #fff;
+            background-color: #3d2329;
+        }
+    } 
+    .wordpress {
+        position: relative;
+        margin-top: 59px;
         .fa-wordpress-simple::before {
             font-size: 35px;
             box-sizing: border-box;
@@ -65,11 +100,139 @@
             background-size: 70px;
             background-repeat: no-repeat;
             position: absolute;
-            top: 78px;
+            top: 0;
             left: 0;
-        }  
+        }
     }
-    .wordpress {
+    .wordpress:hover {
+        cursor: pointer;
+        .fa-wordpress-simple::before {
+            color: #fff;
+            background-image: url('../media/services/back-icon-active.png');
+        }
+        p {
+            color: #fff;
+            background-color: #3d2329;
+        }
+    } 
+    .ui-ux {
         position: relative;
+        margin-top: 59px;
+        .fas {
+            font-weight: 600;
+        }
+        .fa-pencil-alt::before {
+            font-size: 35px;
+            box-sizing: border-box;
+            padding: 12px 17px 10px 18px;
+            color: #262626;
+            text-align: center;
+            background-image: url('../media/services/back-icon.png');
+            background-size: 70px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     }
+    .ui-ux:hover {
+        cursor: pointer;
+        .fa-pencil-alt::before {
+            color: #fff;
+            background-image: url('../media/services/back-icon-active.png');
+        }
+        p {
+            color: #fff;
+            background-color: #3d2329;
+        }
+    } 
+    .html-css {
+        position: relative;
+        .fa-html5::before {
+            font-size: 35px;
+            box-sizing: border-box;
+            padding: 12px 22px 10px 22px;
+            color: #262626;
+            text-align: center;
+            background-image: url('../media/services/back-icon.png');
+            background-size: 70px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .html-css:hover {
+        cursor: pointer;
+        .fa-html5::before {
+            color: #fff;
+            background-image: url('../media/services/back-icon-active.png');
+        }
+        p {
+            color: #fff;
+            background-color: #3d2329;
+        }
+    } 
+    .applications {
+        position: relative;
+        margin-top: 59px;
+        .fas {
+            font-weight: 600;
+        }
+        .fa-tablet-alt::before {
+            font-size: 35px;
+            box-sizing: border-box;
+            padding: 12px 20px 10px 19px;
+            color: #262626;
+            text-align: center;
+            background-image: url('../media/services/back-icon.png');
+            background-size: 70px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .applications:hover {
+        cursor: pointer;
+        .fa-tablet-alt::before {
+            color: #fff;
+            background-image: url('../media/services/back-icon-active.png');
+        }
+        p {
+            color: #fff;
+            background-color: #3d2329;
+        }
+    }
+    .responsive-layout {
+        position: relative;
+        margin-top: 59px;
+        .fas {
+            font-weight: 600;
+        }
+        .fa-laptop::before {
+            font-size: 35px;
+            box-sizing: border-box;
+            padding: 12px 13px 10px 13px;
+            color: #262626;
+            text-align: center;
+            background-image: url('../media/services/back-icon.png');
+            background-size: 70px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .responsive-layout:hover {
+        cursor: pointer;
+        .fa-laptop::before {
+            color: #fff;
+            background-image: url('../media/services/back-icon-active.png');
+        }
+        p {
+            color: #fff;
+            background-color: #3d2329;
+        }
+    } 
 }

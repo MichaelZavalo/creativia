@@ -1332,7 +1332,7 @@ header .container {
 }
 .wr-services .development:hover .fa-code::before {
   color: #fff;
-  background-image: url("../media/services/development-active.png");
+  background-image: url("../media/services/back-icon-active.png");
 }
 .wr-services .development:hover p {
   color: #fff;

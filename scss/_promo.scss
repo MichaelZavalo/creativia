@@ -126,31 +126,36 @@ header {
     .slick-slider {
         position: relative;
     }
-    .fa-arrow-left {
+    .slick-prev {
         display: block;
         position: absolute;
-        top: 71%;
+        top: 82%;
         left: -130px;
         width: 17px;
         height: 28px;
         background-image: url("../media/why-creativia/left-arrow-gray.png");
     }
-    .fa-arrow-left:hover {
+    .slick-prev::before {
+        display: none;
+    }
+    .slick-prev:hover {
             background-image: url("../media/why-creativia/left-arrow-active.png");
             cursor: pointer;
     }
-
-    .fa-arrow-right {
+    .slick-next {
         display: block;
         position: absolute;
-        top: 71%;
+        top: 82%;
         right: -130px;
         width: 17px;
         height: 28px;
         background-image: url("../media/why-creativia/right-arrow-gray.png");
     }
-    .fa-arrow-right:hover {
+    .slick-next::before {
+        display: none;
+    }
+    .slick-next:hover {
         background-image: url("../media/why-creativia/right-arrow-active.png");
         cursor: pointer;
-        }
+    }
 }

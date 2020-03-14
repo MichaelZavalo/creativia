@@ -3,8 +3,8 @@ $(document).ready(function () {
         {
             arrows:true,
             dots:false,
-            nextArrow: '<i class="fa fa-arrow-right"></i>',
-            prevArrow: '<i class="fa fa-arrow-left"></i>',
+            //nextArrow: '<i class="fa fa-arrow-right"></i>',
+            //prevArrow: '<i class="fa fa-arrow-left"></i>',
         }
     );
 });

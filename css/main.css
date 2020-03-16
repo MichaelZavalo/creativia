@@ -1099,7 +1099,7 @@ header .container {
 .wr-teamwork .container .teamwork-head img {
   position: absolute;
   top: -103px;
-  left: 27.5%;
+  left: 28%;
 }
 .wr-teamwork .teamwork-main {
   display: flex;
@@ -1521,6 +1521,150 @@ header .container {
   margin-bottom: 0px;
   margin-top: 39px;
   font-size: 16px;
+}
+.wr-bestseller .container .bestseller-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  /*a+h4 change color and back*/
+}
+.wr-bestseller .container .bestseller-main div {
+  align-items: center;
+  width: 270px;
+}
+.wr-bestseller .container .bestseller-main h3 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: ralewy-medium;
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
+  height: 48px;
+  background-color: #262626;
+  margin: 0 auto;
+}
+.wr-bestseller .container .bestseller-main h4 {
+  font-family: lato-black;
+  font-size: 49.99px;
+  color: #262626;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 87px;
+  background-color: #f2f2f2;
+  height: 87px;
+  width: 100%;
+}
+.wr-bestseller .container .bestseller-main span {
+  text-align: end;
+  font-size: 16px;
+  font-family: lato-reg;
+  color: #262626;
+}
+.wr-bestseller .container .bestseller-main p {
+  font-family: lato-reg;
+  font-size: 16px;
+  color: #262626;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 51px;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+}
+.wr-bestseller .container .bestseller-main .order {
+  height: 80px;
+}
+.wr-bestseller .container .bestseller-main a {
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  width: 228px;
+  height: 38px;
+  color: #fff;
+  align-items: center;
+  background-color: #393939;
+  box-sizing: border-box;
+}
+.wr-bestseller .container .bestseller-main a:hover {
+  background-color: #ff0036;
+  color: #fff;
+}
+
+.wr-twitter {
+  background-image: url("../media/last-tweets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wr-twitter .container {
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.wr-twitter .container img {
+  margin-top: 100px;
+}
+.wr-twitter .container p {
+  width: 646px;
+  text-align: center;
+  font-family: lato-reg;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 21px;
+  margin-bottom: 100px;
+}
+
+.wr-blog .container {
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.wr-blog .container .blog-head {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 103px;
+  width: 100%;
+  position: relative;
+}
+.wr-blog .container .blog-head img {
+  position: absolute;
+  top: -112px;
+  left: 28%;
+}
+.wr-blog .container h2 {
+  font-family: raleway-bold;
+  color: #262626;
+  margin-bottom: 0px;
+  font-size: 30px;
+  margin-top: 0px;
+}
+.wr-blog .container span {
+  color: #ff0036;
+}
+.wr-blog .container h3 {
+  font-family: lato-bold;
+  color: #262626;
+  margin-bottom: 0px;
+  margin-top: 39px;
+  font-size: 16px;
+}
+.wr-blog .container .blog-main {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.wr-blog .container .blog-main ul {
+  list-style-type: none;
+}
+.wr-blog .container .blog-main .post-one, .wr-blog .container .blog-main post-two {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=main.css.map */

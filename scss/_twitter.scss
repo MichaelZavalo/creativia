@@ -1,0 +1,22 @@
+.wr-twitter {
+    background-image: url('../media/last-tweets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        align-items: center;
+        flex-direction: column;
+        margin-top: 100px;
+        img {
+            margin-top: 100px;
+        }
+        p {
+            width: 646px;
+            text-align: center;
+            font-family: lato-reg;
+            font-size: 16px;
+            color: #ffffff;
+            margin-top: 21px;
+            margin-bottom: 100px;
+        }
+    }
+}

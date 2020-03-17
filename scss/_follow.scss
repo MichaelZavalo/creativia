@@ -1,0 +1,110 @@
+.wr-follow {
+    background-image: url('../media/follow/background.jpg');
+    .container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h2 {
+            font-family: raleway-bold;
+            color: #fff;
+            margin-bottom: 0px;
+            font-size: 30px;
+            margin-top: 96px;
+        }
+        span {
+            color: #ff0036;
+        }
+    }
+    ul {
+        padding: 0;
+        margin-top: 148px;
+        margin-bottom: 87px;
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        li {
+            display: inline-block;
+            margin:0 40px;
+            position: relative;
+            font-family: lato-reg;
+            font-size: 16px;
+            width: 45px;
+            text-align: center;
+        }
+        .fa-facebook-f {
+            font-size: 20px;
+            box-sizing: border-box;
+            padding: 24px 31px 24px 31px;;
+            color: #ff0036;
+            text-align: center;
+            background-image: url('../media/follow/icon-back.png');
+            background-size: 75px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -103px;
+            left: -17px;
+        }
+        .fa-twitter {
+            font-size: 20px;
+            box-sizing: border-box;
+            padding: 24px 27px 24px 28px;
+            color: #ff0036;
+            text-align: center;
+            background-image: url('../media/follow/icon-back.png');
+            background-size: 75px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -103px;
+            left: -15px;
+        }
+        .fa-pinterest-p {
+            font-size: 20px;
+            box-sizing: border-box;
+            padding: 24px 30px 24px 30px;
+            color: #ff0036;
+            text-align: center;
+            background-image: url('../media/follow/icon-back.png');
+            background-size: 75px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -103px;
+            left: -15px;
+        }
+        .google {
+            position: absolute;
+            box-sizing: border-box;
+            padding: 27px 29px 24px 30px;
+            color: #fff;
+            text-align: center;
+            background-image: url('../media/follow/icon-back.png');
+            background-size: 75px;
+            background-repeat: no-repeat;
+            top: -103px;
+            left: -15px;
+        }
+        .google-hover { 
+            display: none;
+        }
+        .google-active {
+            position: absolute;
+            box-sizing: border-box;
+            padding: 27px 29px 24px 30px;
+            text-align: center;
+            background-image: url('../media/follow/icon-back-active.png');
+            background-size: 75px;
+            background-repeat: no-repeat;
+            top: -103px;
+            left: -15px;
+        }
+        .fa-facebook-f:hover, .fa-twitter:hover, .fa-pinterest-p:hover {
+            color: #fff;
+            background-image: url('../media/follow/icon-back-active.png');
+            background-size: 76px;
+            cursor: pointer;
+        }
+        .google-image:hover .google-hover {
+            display: block;
+            cursor: pointer;
+        }
+    }
+}

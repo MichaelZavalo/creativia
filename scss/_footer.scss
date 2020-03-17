@@ -1,0 +1,18 @@
+.wr-footer {
+    background-color: #262626;
+    .container {
+        justify-content: center;
+        align-items: center;
+        a { 
+            margin-top: 30px;
+            margin-bottom: 26px;
+            display: block;
+            background-image: url('../media/footer/logo.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 15;
+            width: 120px;
+            height: 23px;
+        }
+    }
+}

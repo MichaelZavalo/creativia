@@ -33,77 +33,78 @@
             margin-top: 39px;
             font-size: 16px;
         }
-        .bestseller-main {
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-top: 100px;
-            div {
-                align-items: center;
-                width: 270px;
-            }
-            h3 {
-                display: inline-flex;
-                justify-content: center;
-                align-items: center;
-                font-family: ralewy-medium;
-                font-size: 20px;
-                color: #fff;
-                width: 100%;
-                height: 48px;
-                background-color: #262626;
-                margin: 0 auto;
-            }
-            h4 {
-                font-family: lato-black;
-                font-size: 49.99px;
-                color: #262626;
-                position: relative;
-                margin: 0 auto;
-                text-align: center;
-                line-height: 87px;
-                background-color: #f2f2f2;
-                height: 87px;
-                width: 100%;
-            }
-            span { 
-                text-align: end;
-                font-size: 16px;
-                font-family: lato-reg;
-                color: #262626;
-            }
-            p {
-                font-family: lato-reg;
-                font-size: 16px;
-                color: #262626;
-                margin: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: 51px;
-                border: 1px solid #e7e7e7;
-                box-sizing: border-box;
-            }
-            .order {
-                height: 80px;
-            }
-            a {
-                text-decoration: none;
-                display: inline-flex;
-                justify-content: center;
-                width: 228px;
-                height: 38px;
-                color: #fff;
-                align-items: center;
-                background-color: #393939;
-                box-sizing: border-box;
-            }
-            a:hover  {
-                background-color: #ff0036;
-                color: #fff;
-            } /*a+h4 change color and back*/
-        }
     }   
+    .bestseller-main {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 100px;
+        div {
+            align-items: center;
+            width: 270px;
+        }
+        h3 {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-family: ralewy-medium;
+            font-size: 20px;
+            color: #fff;
+            width: 100%;
+            height: 48px;
+            background-color: #262626;
+            margin: 0 auto;
+        }
+        h4 {
+            font-family: lato-black;
+            font-size: 49.99px;
+            color: #262626;
+            position: relative;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 87px;
+            background-color: #f2f2f2;
+            height: 87px;
+            width: 100%;
+        }
+        span { 
+            text-align: end;
+            font-size: 16px;
+            font-family: lato-reg;
+            color: #262626;
+        }
+        p {
+            font-family: lato-reg;
+            font-size: 16px;
+            color: #262626;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 51px;
+            border: 1px solid #e7e7e7;
+            box-sizing: border-box;
+        }
+        .order {
+            height: 80px;
+        }
+        a {
+            text-decoration: none;
+            display: inline-flex;
+            justify-content: center;
+            width: 228px;
+            height: 38px;
+            font-family: raleway-medium;
+            color: #fff;
+            align-items: center;
+            background-color: #393939;
+            box-sizing: border-box;
+        }
+        a:hover {
+            background-color: #ff0036;
+            color: #fff;
+        } /*a+h4 change color and back*/
+    }
 }

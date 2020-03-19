@@ -1,11 +1,12 @@
 .wr-teamwork {
     .container {
         flex-direction: column;
+        padding-top: 94px;
+        padding-bottom: 98px;
         .teamwork-head {
             display: flex;
             align-items: center;
             flex-direction: column;
-            margin-top: 94px;
             width: 100%;
             position: relative;
             h2 {
@@ -34,7 +35,7 @@
     } 
     .teamwork-main {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-top: 98px;
     }
     .wayne, .srour, .doe, .de {

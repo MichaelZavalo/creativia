@@ -38,6 +38,10 @@
     font-family: myriad-reg;
     src: url('fonts/myriad-reg.otf');
 }
+@font-face {
+    font-family: raleway-exlight;
+    src: url('fonts/raleway-exlight.ttf');
+}
 body{
     background-color: white;
     font-size: 16px;

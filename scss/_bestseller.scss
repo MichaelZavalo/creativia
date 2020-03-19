@@ -3,11 +3,12 @@
         align-items: center;
         flex-direction: column;
         position: relative;
+        padding-top: 100px;
+        padding-bottom: 100px;
         .bestseller-head {
             display: flex;
             align-items: center;
             flex-direction: column;
-            margin-top: 100px;
             width: 100%;
             position: relative;
             img {
@@ -37,36 +38,15 @@
     .bestseller-main {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         margin-top: 100px;
-        div {
+        ul {
             align-items: center;
             width: 270px;
-        }
-        h3 {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            font-family: ralewy-medium;
-            font-size: 20px;
-            color: #fff;
-            width: 100%;
-            height: 48px;
-            background-color: #262626;
-            margin: 0 auto;
-        }
-        h4 {
-            font-family: lato-black;
-            font-size: 49.99px;
-            color: #262626;
-            position: relative;
-            margin: 0 auto;
-            text-align: center;
-            line-height: 87px;
-            background-color: #f2f2f2;
-            height: 87px;
-            width: 100%;
+            list-style-type: none;
+            padding: 0;
+            margin-top: 0;
         }
         span { 
             text-align: end;
@@ -74,7 +54,7 @@
             font-family: lato-reg;
             color: #262626;
         }
-        p {
+        li {
             font-family: lato-reg;
             font-size: 16px;
             color: #262626;
@@ -86,6 +66,33 @@
             height: 51px;
             border: 1px solid #e7e7e7;
             box-sizing: border-box;
+            border-top: none;
+        }
+        .reseller {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-family: ralewy-medium;
+            font-size: 20px;
+            color: #fff;
+            width: 100%;
+            height: 48px;
+            background-color: #262626;
+            margin: 0 auto;
+            border-bottom: none;
+        }
+        .price {
+            font-family: lato-black;
+            font-size: 49.99px;
+            color: #262626;
+            position: relative;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 87px;
+            background-color: #f2f2f2;
+            height: 87px;
+            width: 100%;
+            border: none;
         }
         .order {
             height: 80px;
@@ -102,9 +109,10 @@
             background-color: #393939;
             box-sizing: border-box;
         }
-        a:hover {
+        ul:hover a, ul:hover .price, ul:hover span {
             background-color: #ff0036;
             color: #fff;
-        } /*a+h4 change color and back*/
+            border-color: #ff0036;
+        }
     }
 }

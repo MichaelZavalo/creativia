@@ -2,11 +2,12 @@
     .container {
         justify-content: center;
         align-items: center;
-        margin-top: 100px;
+        padding-top: 94px;
+        padding-bottom: 100px;
         flex-direction: column;
     }
     .decoration {
-        margin-top: 100px;
+        margin-top: 97px;
     }
 }
 .container-head {
@@ -19,9 +20,9 @@
         font-size: 30px;
         margin-top: 0px;
     }
-        span {
-            color: #ff0036;
-        }
+    span {
+       color: #ff0036;
+    }
     h3 {
         font-family: lato-bold;
         color: #262626;
@@ -33,6 +34,7 @@
 .container-list {
     margin-top: 100px;
     display: flex;
+    outline: none;
     .container-list-main {
         flex-direction: column;
         width: 570px;
@@ -43,58 +45,128 @@
             color: #5c5c5c;
             margin-top: 0px;
             text-align: justify;
+            line-height: 1.4;
         }
     }
     .toggles {
         flex-direction: column;
-        width: 100%;
     }
-        .btn {
-            width: 100%;
-            background-color: #f7f7f7;
-            position: relative;
-            background-image: url('../media/about/plus-closed.png');
-            background-repeat: no-repeat;
-            background-position: 0.5%;
+    .btn {
+        display: flex;
+        height: 45px;
+        background-color: #f7f7f7;
+        position: relative;
+        padding: 0;
+        border: none;
+        color: inherit;
+        width: 100%;
+        transition-duration: 0.5s;
+        .fa-plus-circle {
+            color: #505050;
+            font-size: 18px;
+            border: 1px solid #e7e7e7;
+            width: 60px;
+            height: 45px;
+            box-sizing: border-box;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
         }
-        /*btn::after*/
-        .toggles span {
+        .fa-minus-circle {
+            display: none;
+        }
+        span {
             font-family: raleway-medium;
             font-size: 20px;
-            color: #3f3f3f;
+            color: #262626;
+            width: 510px;
+            height: 45px;
+            box-sizing: border-box;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #e7e7e7;
+            border-left: 0px;
         }
-        .content {
-            font-family: lato-reg;
-            font-size: 14px;
-            color: #505050;
-            margin-top: 0;
-            padding-left: 17px;
-            padding-right: 17px;
-            text-align: justify;
-            max-height: 0;
-            overflow: hidden;
-            line-height: 1.4;
-            transition: 0.5s;
+    }
+    .btn:hover .fa-plus-circle,.btn:hover span  {
+        cursor: pointer;
+        color: #ff0036;
+    }
+    .active {
+        display: flex;
+        height: 45px;
+        background-color: #f7f7f7;
+        position: relative;
+        padding: 0;
+        border: none;
+        font: inherit;
+        color: inherit;
+        transition-duration: 0.5s;
+        .fa-minus-circle {
+            color: #ff0036;
+            font-size: 18px;
+            border: 1px solid #e7e7e7;
+            width: 60px;
+            height: 45px;
+            box-sizing: border-box;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
         }
+        .fa-plus-circle {
+            display: none;
+        }
+        span {
+            font-family: raleway-medium;
+            font-size: 20px;
+            color: #ff0036;
+            width: 510px;
+            height: 45px;
+            box-sizing: border-box;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #e7e7e7;
+            border-left: 0px;
+        }
+    }
+    .content {
+        font-family: lato-reg;
+        font-size: 14px;
+        color: #505050;
+        margin-top: 0;
+        padding:0 17px;
+        text-align: justify;
+        max-height: 0;
+        overflow: hidden;
+        line-height: 1.5;
+        border: 1px solid #e7e7e7;
+        border-top: 0;
+        box-sizing: border-box;
+        transition-duration: 0.5s;
+    }
 }
 .qualities {
     display: flex;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 204px;
+    width: 100%;
+    justify-content: space-between;
     div {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-bottom: 0;
-        position: relative;
+        width: 270px;
     }
     h3 {
         font-family: raleway-medium;
         font-size: 20px;
         color: #262626;
-        margin-bottom: 0;
-        margin-top: 35px;
+        margin: 0px;
+        position: relative;
+        line-height: 1.4;
     }
     p {
         font-family: lato-reg;
@@ -102,10 +174,14 @@
         color: #616161;
         text-align: center;
         margin-bottom: 0;
-        margin-top: 26px;
+        margin-top: 15px;
+        line-height: 1.4;
     }
-    .flat-design .active {
+    .active-flat::after {
         content: '';
+        position: absolute;
+        top: -104px;
+        left: 18px;
         display: block;
         background-image: url('../media/about/decorate-heart-pass.png');
         background-repeat: no-repeat;
@@ -113,12 +189,15 @@
         width: 90px;
         height: 78px;
     }
-    .flat-design .active:hover{
+    .active-flat:hover:after{
         background-image: url('../media/about/decorate-heart-active.png');
         cursor: pointer;
     }
-    .retina-ready .active {
+    .active-retina::after {
         content: '';
+        position: absolute;
+        top: -107px;
+        left: 29px;
         display: block;
         background-image: url('../media/about/decorate-ok-pass.png');
         background-repeat: no-repeat;
@@ -126,12 +205,15 @@
         width: 90px;
         height: 78px;
     }
-    .retina-ready .active:hover{
+    .active-retina:hover:after {
         background-image: url('../media/about/decorate-ok-active.png');
         cursor: pointer;
     }
-    .responsive .active {
+    .active-responsive::after {
         content: '';
+        position: absolute;
+        top: -107px;
+        left: 17px;
         display: block;
         background-image: url('../media/about/decorate-screen-pass.png');
         background-repeat: no-repeat;
@@ -139,12 +221,15 @@
         width: 90px;
         height: 78px;
     }
-    .responsive .active:hover{
+    .active-responsive:hover::after {
         background-image: url('../media/about/decorate-screen-active.png');
         cursor: pointer;
     }
-    .clean .active {
+    .active-clean::after {
         content: '';
+        position: absolute;
+        top: -107px;
+        left: 40px;
         display: block;
         background-image: url('../media/about/decorate-fire-pass.png');
         background-repeat: no-repeat;
@@ -152,7 +237,7 @@
         width: 90px;
         height: 78px;
     }
-    .clean .active:hover{
+    .active-clean:hover:after {
         background-image: url('../media/about/decorate-fire-active.png');
         cursor: pointer;
     }

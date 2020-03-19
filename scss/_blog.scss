@@ -3,13 +3,13 @@
         align-items: center;
         flex-direction: column;
         position: relative;
-        
+        padding-top: 101px;
+        padding-bottom: 85px;
     }
     .blog-head {
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-top: 103px;
         width: 100%;
         position: relative;
         img {
@@ -103,7 +103,8 @@
         background-image: url("../media/blog/load-more.png");
         width: 43px;
         height: 43px;
-        margin: 40px 0 85px 0;
+        margin: 40px auto;
+        margin-bottom: 0px;
         border-radius: 50%;
     }
     .load-more:hover {

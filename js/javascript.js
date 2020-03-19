@@ -3,8 +3,6 @@ $(document).ready(function () {
         {
             arrows:true,
             dots:false,
-            //nextArrow: '<i class="fa fa-arrow-right"></i>',
-            //prevArrow: '<i class="fa fa-arrow-left"></i>',
         }
     );
 });
@@ -17,7 +15,7 @@ for (let i = 0; i < coll.length; i++) {
         if (content.style.maxHeight) {
            content.style.maxHeight = null;
         } else {
-            content.style.maxHeight = content.scrollHeight+'px'
+            content.style.maxHeight = content.scrollHeight+'85px'
         }
     })
 }

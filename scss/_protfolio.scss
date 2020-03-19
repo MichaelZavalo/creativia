@@ -1,32 +1,29 @@
 .wr-protfolio {
     background-color: #262626;
+    padding-bottom: 100px;
     .container {
         align-items: center;
         flex-direction: column;
+        padding-top: 95px;
         h2 {
-            margin-top: 100px;
             font-family: raleway-bold;
             font-size: 30px;
             color: #fff;
-            margin-bottom: 0px;
+            margin:0;
         }
         ul {
             display: flex;
             list-style-type: none;
-            align-items: center;
             justify-content: center;
-            width: 100%;
-            margin-top: 27px;
-            margin-right: 0px;
-            margin-bottom: 0px;
+            margin: 22px 0 0 0;
+            //padding: 0 0 0 5px;
         }
         li {
-            padding-left: 0px;
+            margin: 0 10.5px;
         }
         a {
             text-decoration: none;
-            margin-left: 0px;
-            margin-right: 23px;
+            margin: 0;
             font-family: lato-bold;
             font-size: 16px;
             color: #a4a4a4;
@@ -73,7 +70,6 @@
                 left: 37%;
             }
         }
-        
     }
     .money:hover .active-item {
         display: block;
@@ -239,7 +235,6 @@
     display: grid;
     grid-template-columns: 3fr 4fr 3fr 4fr;
     height: 350px;
-    padding-bottom: 100px;
     .calculator {
         background-color: #56cc82;
         position: relative;
@@ -384,7 +379,7 @@
         background-image: url('../media/portfolio/wallet-shadow.png');
         background-repeat: no-repeat;
     }
-    .check{
+    .check {
         background-color: #fa8562;
         position: relative;
         img {

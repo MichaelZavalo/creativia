@@ -32,18 +32,21 @@
             color: #ff0036;
         }
     }
-}/*draft*/
-.container-portfolio-one {
+}
+.container-portfolio {
     margin-top: 100px;
-    display: grid;
-    grid-template-columns: 4fr 3fr 4fr 3fr; 
-    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 100% ;
     .money {
+        width: 29%;
+        height: 50%;
         background-color: #f39943;
         position: relative;
         img {
             position: relative;
-            top: 35%;
+            top: 36.8%;
             left: 25%;
             z-index: 10;
         }
@@ -78,21 +81,22 @@
     .money::after {
         content: "";
         position: absolute;
-        width: 32%;
-        height: 104px;
-        top: 45%;
-        left: 68%;
+        width: 50%;
+        height: 105px;
+        top: 44.8%;
+        left: 50%;
         z-index: 5;
         background-image: url('../media/portfolio/money-shadow.png');
-        background-repeat: no-repeat;
     }
     .bank { 
+        width: 21%;
+        height: 50%;
         background-color: #3782aa;
         position: relative;
         img {
             position: absolute;
-            top: 25%;
-            left: 25%;
+            top: 26%;
+            left: 20%;
             z-index: 10;
         }
         .active-item {
@@ -126,21 +130,22 @@
     .bank::after {
         content: "";
         position: absolute;
-        width: 20%;
-        height: 110px;
-        top: 42.8%;
-        left: 80%;
+        width: 50%;
+        height: 109px;
+        top: 44%;
+        left: 50%;
         z-index: 5;
-        background-image: url('../media/portfolio/bank-shadow.png');
-        background-repeat: no-repeat;
+        background-color:#255b77;
     }
     .flower {
+        width: 29%;
+        height: 50%;
         background-color: #ef5d88;
         position: relative;
         img {
             position: absolute;
             top: 27%;
-            left: 25%;
+            left: 29%;
             z-index: 10;
         }
         .active-item {
@@ -174,21 +179,22 @@
     .flower::after {
         content: "";
         position: absolute;
-        width: 38%;
-        height: 96px;
-        top: 46.8%;
-        left: 62%;
+        width: 50%;
+        height: 97px;
+        top: 47%;
+        left: 50%;
         z-index: 5;
         background-image: url('../media/portfolio/flower-shadow.png');
-        background-repeat: repeat;
     }
     .cards {
+        width: 21%;
+        height: 50%;
         background-color: #f6f0e0;
         position: relative;
         img {
             position: absolute;
-            top: 27%;
-            left: 25%;
+            top: 26%;
+            left: 22%;
             z-index: 10;
         }
         .active-item {
@@ -222,25 +228,21 @@
     .cards::after {
         content: "";
         position: absolute;
-        width: 13%;
-        height: 110px;
-        top: 49.5%;
-        left: 87%;
+        width: 50%;
+        height: 81px;
+        top: 50.6%;
+        left: 50%;
         z-index: 5;
         background-image: url('../media/portfolio/cards-shadow.png');
-        background-repeat: no-repeat;
     } 
-}
-.container-portfolio-two {
-    display: grid;
-    grid-template-columns: 3fr 4fr 3fr 4fr;
-    height: 350px;
     .calculator {
+        width: 21%;
+        height: 50%;
         background-color: #56cc82;
         position: relative;
         img {
             position: relative;
-            top: 29%;
+            top: 31%;
             left: 25%;
             z-index: 10;
         }
@@ -275,21 +277,22 @@
     .calculator::after {
         content: "";
         position: absolute;
-        width: 38%;
+        width: 50%;
         height: 125px;
-        top: 43.8%;
-        left: 62%;
+        top: 44.5%;
+        left: 50%;
         z-index: 5;
         background-image: url('../media/portfolio/calculator-shadow.png');
-        background-repeat: repeat;
     }
     .converter {
+        width: 29%;
+        height: 50%;
         background-color: #95a5a5;
         position: relative;
         img {
             position: absolute;
-            top: 29%;
-            left: 25%;
+            top: 31%;
+            left: 28%;
             z-index: 10;
         }
         .active-item {
@@ -323,20 +326,21 @@
     .converter::after {
         content: "";
         position: absolute;
-        width: 35%;
-        height: 112px;
-        top: 44.8%;
-        left: 65%;
+        width: 50%;
+        height: 113px;
+        top: 45.1%;
+        left: 50%;
         z-index: 5;
         background-image: url('../media/portfolio/converter-shadow.png');
-        background-repeat: repeat;
     }
     .wallet {
+        width: 21%;
+        height: 50%;
         background-color: #24b0c9;
         position: relative;
         img {
             position: absolute;
-            top: 27%;
+            top: 27.8%;
             left: 25%;
             z-index: 10;
         }
@@ -371,20 +375,21 @@
     .wallet::after {
         content: "";
         position: absolute;
-        width: 19%;
-        height: 115px;
+        width: 50%;
+        height: 117px;
         top: 45.5%;
-        left: 81%;
+        left: 50%;
         z-index: 5;
         background-image: url('../media/portfolio/wallet-shadow.png');
-        background-repeat: no-repeat;
     }
     .check {
+        width: 29%;
+        height: 50%;
         background-color: #fa8562;
         position: relative;
         img {
             position: absolute;
-            top: 31.5%;
+            top: 33.2%;
             left: 25%;
             z-index: 10;
         }
@@ -410,8 +415,8 @@
                 top: 55%;
                 left: 37%;
             }
-        }    
-    }
+        }
+    }    
     .check:hover .active-item {
         display: block;
         cursor: pointer;
@@ -419,12 +424,11 @@
     .check::after {
         content: "";
         position: absolute;
-        width: 31%;
-        height: 92px;
-        top: 48.8%;
-        left: 69%;
+        width: 50%;
+        height: 93px;
+        top: 49%;
+        left: 50%;
         z-index: 5;
         background-image: url(../media/portfolio/check-shadow.png);
-        background-repeat: repeat;
     }
 }

@@ -24,11 +24,15 @@ header .logo {
 }
 header .logotip {
   position: absolute;
+  top: -2px;
 }
 
 nav {
   display: flex;
   height: 100%;
+  margin-top: -3px;
+  padding: 0;
+  margin-right: 1px;
 }
 nav ul {
   display: flex;
@@ -71,7 +75,7 @@ nav li:hover:before {
   padding-left: 15px;
 }
 .wr-promo .promo-btns-container {
-  margin-top: 32px;
+  margin-top: 46px;
   display: flex;
   justify-content: center;
 }
@@ -97,6 +101,7 @@ nav li:hover:before {
   width: 1030px;
   display: flex;
   justify-content: center;
+  margin-top: -2px;
 }
 .slider h1 {
   font-family: raleway-bold;
@@ -121,7 +126,7 @@ nav li:hover:before {
 .slider .slick-prev {
   display: block;
   position: absolute;
-  top: 82%;
+  top: 59%;
   left: -130px;
   width: 17px;
   height: 28px;
@@ -137,7 +142,7 @@ nav li:hover:before {
 .slider .slick-next {
   display: block;
   position: absolute;
-  top: 82%;
+  top: 59%;
   right: -130px;
   width: 17px;
   height: 28px;
@@ -433,24 +438,26 @@ nav li:hover:before {
   color: #ff0036;
 }
 
-/*draft*/
-.container-portfolio-one {
+.container-portfolio {
   margin-top: 100px;
-  display: grid;
-  grid-template-columns: 4fr 3fr 4fr 3fr;
-  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 700px;
+  width: 100%;
 }
-.container-portfolio-one .money {
+.container-portfolio .money {
+  width: 29%;
+  height: 50%;
   background-color: #f39943;
   position: relative;
 }
-.container-portfolio-one .money img {
+.container-portfolio .money img {
   position: relative;
-  top: 35%;
+  top: 36.8%;
   left: 25%;
   z-index: 10;
 }
-.container-portfolio-one .money .active-item {
+.container-portfolio .money .active-item {
   display: none;
   position: absolute;
   width: 100%;
@@ -460,12 +467,12 @@ nav li:hover:before {
   z-index: 15;
   background-color: rgba(0, 0, 0, 0.9);
 }
-.container-portfolio-one .money .active-item img {
+.container-portfolio .money .active-item img {
   position: absolute;
   top: 46%;
   left: 45%;
 }
-.container-portfolio-one .money .active-item p {
+.container-portfolio .money .active-item p {
   font-family: lato-reg;
   font-size: 16px;
   color: #fff;
@@ -473,32 +480,33 @@ nav li:hover:before {
   top: 55%;
   left: 37%;
 }
-.container-portfolio-one .money:hover .active-item {
+.container-portfolio .money:hover .active-item {
   display: block;
   cursor: pointer;
 }
-.container-portfolio-one .money::after {
+.container-portfolio .money::after {
   content: "";
   position: absolute;
-  width: 32%;
-  height: 104px;
-  top: 45%;
-  left: 68%;
+  width: 50%;
+  height: 105px;
+  top: 44.8%;
+  left: 50%;
   z-index: 5;
   background-image: url("../media/portfolio/money-shadow.png");
-  background-repeat: no-repeat;
 }
-.container-portfolio-one .bank {
+.container-portfolio .bank {
+  width: 21%;
+  height: 50%;
   background-color: #3782aa;
   position: relative;
 }
-.container-portfolio-one .bank img {
+.container-portfolio .bank img {
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 26%;
+  left: 20%;
   z-index: 10;
 }
-.container-portfolio-one .bank .active-item {
+.container-portfolio .bank .active-item {
   display: none;
   position: absolute;
   width: 100%;
@@ -508,12 +516,12 @@ nav li:hover:before {
   z-index: 15;
   background-color: rgba(0, 0, 0, 0.9);
 }
-.container-portfolio-one .bank .active-item img {
+.container-portfolio .bank .active-item img {
   position: absolute;
   top: 46%;
   left: 48%;
 }
-.container-portfolio-one .bank .active-item p {
+.container-portfolio .bank .active-item p {
   font-family: lato-reg;
   font-size: 16px;
   color: #fff;
@@ -521,32 +529,33 @@ nav li:hover:before {
   top: 55%;
   left: 37%;
 }
-.container-portfolio-one .bank:hover .active-item {
+.container-portfolio .bank:hover .active-item {
   display: block;
   cursor: pointer;
 }
-.container-portfolio-one .bank::after {
+.container-portfolio .bank::after {
   content: "";
   position: absolute;
-  width: 20%;
-  height: 110px;
-  top: 42.8%;
-  left: 80%;
+  width: 50%;
+  height: 109px;
+  top: 44%;
+  left: 50%;
   z-index: 5;
-  background-image: url("../media/portfolio/bank-shadow.png");
-  background-repeat: no-repeat;
+  background-color: #255b77;
 }
-.container-portfolio-one .flower {
+.container-portfolio .flower {
+  width: 29%;
+  height: 50%;
   background-color: #ef5d88;
   position: relative;
 }
-.container-portfolio-one .flower img {
+.container-portfolio .flower img {
   position: absolute;
   top: 27%;
-  left: 25%;
+  left: 29%;
   z-index: 10;
 }
-.container-portfolio-one .flower .active-item {
+.container-portfolio .flower .active-item {
   display: none;
   position: absolute;
   width: 100%;
@@ -556,12 +565,12 @@ nav li:hover:before {
   z-index: 15;
   background-color: rgba(0, 0, 0, 0.9);
 }
-.container-portfolio-one .flower .active-item img {
+.container-portfolio .flower .active-item img {
   position: absolute;
   top: 46%;
   left: 45%;
 }
-.container-portfolio-one .flower .active-item p {
+.container-portfolio .flower .active-item p {
   font-family: lato-reg;
   font-size: 16px;
   color: #fff;
@@ -569,32 +578,33 @@ nav li:hover:before {
   top: 55%;
   left: 37%;
 }
-.container-portfolio-one .flower:hover .active-item {
+.container-portfolio .flower:hover .active-item {
   display: block;
   cursor: pointer;
 }
-.container-portfolio-one .flower::after {
+.container-portfolio .flower::after {
   content: "";
   position: absolute;
-  width: 38%;
-  height: 96px;
-  top: 46.8%;
-  left: 62%;
+  width: 50%;
+  height: 97px;
+  top: 47%;
+  left: 50%;
   z-index: 5;
   background-image: url("../media/portfolio/flower-shadow.png");
-  background-repeat: repeat;
 }
-.container-portfolio-one .cards {
+.container-portfolio .cards {
+  width: 21%;
+  height: 50%;
   background-color: #f6f0e0;
   position: relative;
 }
-.container-portfolio-one .cards img {
+.container-portfolio .cards img {
   position: absolute;
-  top: 27%;
-  left: 25%;
+  top: 26%;
+  left: 22%;
   z-index: 10;
 }
-.container-portfolio-one .cards .active-item {
+.container-portfolio .cards .active-item {
   display: none;
   position: absolute;
   width: 100%;
@@ -604,12 +614,12 @@ nav li:hover:before {
   z-index: 15;
   background-color: rgba(0, 0, 0, 0.9);
 }
-.container-portfolio-one .cards .active-item img {
+.container-portfolio .cards .active-item img {
   position: absolute;
   top: 46%;
   left: 48%;
 }
-.container-portfolio-one .cards .active-item p {
+.container-portfolio .cards .active-item p {
   font-family: lato-reg;
   font-size: 16px;
   color: #fff;
@@ -617,38 +627,33 @@ nav li:hover:before {
   top: 55%;
   left: 37%;
 }
-.container-portfolio-one .cards:hover .active-item {
+.container-portfolio .cards:hover .active-item {
   display: block;
   cursor: pointer;
 }
-.container-portfolio-one .cards::after {
+.container-portfolio .cards::after {
   content: "";
   position: absolute;
-  width: 13%;
-  height: 110px;
-  top: 49.5%;
-  left: 87%;
+  width: 50%;
+  height: 81px;
+  top: 50.6%;
+  left: 50%;
   z-index: 5;
   background-image: url("../media/portfolio/cards-shadow.png");
-  background-repeat: no-repeat;
 }
-
-.container-portfolio-two {
-  display: grid;
-  grid-template-columns: 3fr 4fr 3fr 4fr;
-  height: 350px;
-}
-.container-portfolio-two .calculator {
+.container-portfolio .calculator {
+  width: 21%;
+  height: 50%;
   background-color: #56cc82;
   position: relative;
 }
-.container-portfolio-two .calculator img {
+.container-portfolio .calculator img {
   position: relative;
-  top: 29%;
+  top: 31%;
   left: 25%;
   z-index: 10;
 }
-.container-portfolio-two .calculator .active-item {
+.container-portfolio .calculator .active-item {
   display: none;
   position: absolute;
   width: 100%;
@@ -658,12 +663,12 @@ nav li:hover:before {
   z-index: 15;
   background-color: rgba(0, 0, 0, 0.9);
 }
-.container-portfolio-two .calculator .active-item img {
+.container-portfolio .calculator .active-item img {
   position: absolute;
   top: 46%;
   left: 48%;
 }
-.container-portfolio-two .calculator .active-item p {
+.container-portfolio .calculator .active-item p {
   font-family: lato-reg;
   font-size: 16px;
   color: #fff;
@@ -671,32 +676,33 @@ nav li:hover:before {
   top: 55%;
   left: 37%;
 }
-.container-portfolio-two .calculator:hover .active-item {
+.container-portfolio .calculator:hover .active-item {
   display: block;
   cursor: pointer;
 }
-.container-portfolio-two .calculator::after {
+.container-portfolio .calculator::after {
   content: "";
   position: absolute;
-  width: 38%;
+  width: 50%;
   height: 125px;
-  top: 43.8%;
-  left: 62%;
+  top: 44.5%;
+  left: 50%;
   z-index: 5;
   background-image: url("../media/portfolio/calculator-shadow.png");
-  background-repeat: repeat;
 }
-.container-portfolio-two .converter {
+.container-portfolio .converter {
+  width: 29%;
+  height: 50%;
   background-color: #95a5a5;
   position: relative;
 }
-.container-portfolio-two .converter img {
+.container-portfolio .converter img {
   position: absolute;
-  top: 29%;
-  left: 25%;
+  top: 31%;
+  left: 28%;
   z-index: 10;
 }
-.container-portfolio-two .converter .active-item {
+.container-portfolio .converter .active-item {
   display: none;
   position: absolute;
   width: 100%;
@@ -706,12 +712,12 @@ nav li:hover:before {
   z-index: 15;
   background-color: rgba(0, 0, 0, 0.9);
 }
-.container-portfolio-two .converter .active-item img {
+.container-portfolio .converter .active-item img {
   position: absolute;
   top: 46%;
   left: 45%;
 }
-.container-portfolio-two .converter .active-item p {
+.container-portfolio .converter .active-item p {
   font-family: lato-reg;
   font-size: 16px;
   color: #fff;
@@ -719,32 +725,33 @@ nav li:hover:before {
   top: 55%;
   left: 37%;
 }
-.container-portfolio-two .converter:hover .active-item {
+.container-portfolio .converter:hover .active-item {
   display: block;
   cursor: pointer;
 }
-.container-portfolio-two .converter::after {
+.container-portfolio .converter::after {
   content: "";
   position: absolute;
-  width: 35%;
-  height: 112px;
-  top: 44.8%;
-  left: 65%;
+  width: 50%;
+  height: 113px;
+  top: 45.1%;
+  left: 50%;
   z-index: 5;
   background-image: url("../media/portfolio/converter-shadow.png");
-  background-repeat: repeat;
 }
-.container-portfolio-two .wallet {
+.container-portfolio .wallet {
+  width: 21%;
+  height: 50%;
   background-color: #24b0c9;
   position: relative;
 }
-.container-portfolio-two .wallet img {
+.container-portfolio .wallet img {
   position: absolute;
-  top: 27%;
+  top: 27.8%;
   left: 25%;
   z-index: 10;
 }
-.container-portfolio-two .wallet .active-item {
+.container-portfolio .wallet .active-item {
   display: none;
   position: absolute;
   width: 100%;
@@ -754,12 +761,12 @@ nav li:hover:before {
   z-index: 15;
   background-color: rgba(0, 0, 0, 0.9);
 }
-.container-portfolio-two .wallet .active-item img {
+.container-portfolio .wallet .active-item img {
   position: absolute;
   top: 46%;
   left: 48%;
 }
-.container-portfolio-two .wallet .active-item p {
+.container-portfolio .wallet .active-item p {
   font-family: lato-reg;
   font-size: 16px;
   color: #fff;
@@ -767,32 +774,33 @@ nav li:hover:before {
   top: 55%;
   left: 37%;
 }
-.container-portfolio-two .wallet:hover .active-item {
+.container-portfolio .wallet:hover .active-item {
   display: block;
   cursor: pointer;
 }
-.container-portfolio-two .wallet::after {
+.container-portfolio .wallet::after {
   content: "";
   position: absolute;
-  width: 19%;
-  height: 115px;
+  width: 50%;
+  height: 117px;
   top: 45.5%;
-  left: 81%;
+  left: 50%;
   z-index: 5;
   background-image: url("../media/portfolio/wallet-shadow.png");
-  background-repeat: no-repeat;
 }
-.container-portfolio-two .check {
+.container-portfolio .check {
+  width: 29%;
+  height: 50%;
   background-color: #fa8562;
   position: relative;
 }
-.container-portfolio-two .check img {
+.container-portfolio .check img {
   position: absolute;
-  top: 31.5%;
+  top: 33.2%;
   left: 25%;
   z-index: 10;
 }
-.container-portfolio-two .check .active-item {
+.container-portfolio .check .active-item {
   display: none;
   position: absolute;
   width: 100%;
@@ -802,12 +810,12 @@ nav li:hover:before {
   z-index: 15;
   background-color: rgba(0, 0, 0, 0.9);
 }
-.container-portfolio-two .check .active-item img {
+.container-portfolio .check .active-item img {
   position: absolute;
   top: 46%;
   left: 45%;
 }
-.container-portfolio-two .check .active-item p {
+.container-portfolio .check .active-item p {
   font-family: lato-reg;
   font-size: 16px;
   color: #fff;
@@ -815,28 +823,21 @@ nav li:hover:before {
   top: 55%;
   left: 37%;
 }
-.container-portfolio-two .check:hover .active-item {
+.container-portfolio .check:hover .active-item {
   display: block;
   cursor: pointer;
 }
-.container-portfolio-two .check::after {
+.container-portfolio .check::after {
   content: "";
   position: absolute;
-  width: 31%;
-  height: 92px;
-  top: 48.8%;
-  left: 69%;
+  width: 50%;
+  height: 93px;
+  top: 49%;
+  left: 50%;
   z-index: 5;
   background-image: url(../media/portfolio/check-shadow.png);
-  background-repeat: repeat;
 }
 
-.wr-feature {
-  background-image: url("../media/products-features/background.jpg");
-  background-repeat: no-repeat;
-  background-position-x: 50%;
-  background-position-y: 72%;
-}
 .wr-feature a {
   text-decoration: none;
   font-family: raleway-medium;
@@ -847,7 +848,7 @@ nav li:hover:before {
   align-items: center;
   flex-direction: column;
   position: relative;
-  padding-bottom: 175px;
+  padding-bottom: 67px;
 }
 .wr-feature .container .feature-head {
   display: flex;
@@ -881,10 +882,21 @@ nav li:hover:before {
 }
 .wr-feature .btns-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  margin-top: 157px;
+  margin-top: 34px;
   width: 100%;
+  padding-top: 143px;
+  padding-bottom: 74px;
+  background-image: url("../media/products-features/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.wr-feature .btns-container .btns-container-columns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .wr-feature .btns-container .left-side {
   display: flex;
@@ -904,6 +916,9 @@ nav li:hover:before {
   background-repeat: no-repeat;
   background-position-x: 310px;
   background-position-y: center;
+}
+.wr-feature .btns-container .left-side .first {
+  margin: 0;
 }
 .wr-feature .btns-container .left-side p {
   margin-right: 75px;
@@ -932,6 +947,9 @@ nav li:hover:before {
   background-position-x: 20px;
   background-position-y: center;
 }
+.wr-feature .btns-container .right-side .first {
+  margin: 0;
+}
 .wr-feature .btns-container .right-side p {
   margin-left: 75px;
 }
@@ -939,6 +957,10 @@ nav li:hover:before {
   background-image: url("../media/products-features/active-icon.png");
   background-color: #ff0036;
   color: #fff;
+}
+.wr-feature .btns-container-columns {
+  display: flex;
+  justify-content: space-between;
 }
 .wr-feature .btn-free-psd {
   display: inline-flex;
@@ -1652,7 +1674,7 @@ nav li:hover:before {
   background-color: #393939;
   box-sizing: border-box;
 }
-.wr-bestseller .bestseller-main ul:hover a, .wr-bestseller .bestseller-main ul:hover .price, .wr-bestseller .bestseller-main ul:hover span {
+.wr-bestseller .bestseller-main div:hover a, .wr-bestseller .bestseller-main div:hover .price, .wr-bestseller .bestseller-main div:hover span {
   background-color: #ff0036;
   color: #fff;
   border-color: #ff0036;

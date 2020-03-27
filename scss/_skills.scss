@@ -14,6 +14,7 @@
                 margin-bottom: 0px;
                 font-size: 30px;
                 margin-top: 90px;
+                text-align: center;
             }
             span {
                 color: #ff0036;
@@ -24,6 +25,7 @@
                 margin-bottom: 0px;
                 margin-top: 38px;
                 font-size: 16px;
+                text-align: center;
             }
             .decoration {
                 margin: 0 auto;
@@ -58,6 +60,125 @@
             margin: 0 auto;
             margin-top: 17px;
             text-align: center;
+        }
+    }
+}
+@media all and (max-width:768px) {
+    .wr-skills {
+        .skills-main{
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 50px;
+            .photoshop, .html, .php, .wordpress {
+                width: 170px;
+                margin: 0 40px;
+            }
+            .php, .wordpress {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+@media all and (max-width:550px) {
+    .wr-skills {
+        .skills-head {
+            .decoration {
+                display: none;
+            }
+        }
+        .skills-main{
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .photoshop, .html, .php, .wordpress {
+                width: 170px;
+                margin: 0 10px;
+            }
+            .php, .wordpress {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+@media all and (max-width:425px) {
+    .wr-skills {
+        .container {
+            flex-direction: column;
+            padding-bottom: 50px;
+            padding-top: 10px;
+            .skills-head {  
+                h2 {
+                    font-size: 25px;
+                    margin-top: 0px;
+                }
+                h3 {
+                    margin-top: 20px;
+                    font-size: 14px;
+                }
+            }  
+        }
+        .skills-main{
+            margin-top: 20px;
+            .photoshop, .html, .php, .wordpress {
+                width: 150px;
+                margin: 5px;
+            }
+            .php, .wordpress {
+                margin-top: 20px;
+            }
+            img { 
+                width: 100%;
+                padding: 0 2px;      
+            }
+            p {
+                font-family: lato-reg;
+                font-size: 14px;
+                color: #505050;
+                text-align: justify;
+                text-align-last: center;
+                margin: 0 auto;
+                margin-top: 5px;
+            }
+            h3 {
+                font-family: raleway-medium;
+                font-size: 16px;
+                color: #262626;
+                margin: 0 auto;
+                margin-top: 5px;
+                text-align: center;
+            }
+        }
+    }
+}
+@media all and (max-width:375px) {
+    .wr-skills {
+        .container {
+            .skills-head {  
+                h2 {
+                    font-size: 20px;
+                }
+                h3 {
+                    margin-top: 20px;
+                    font-size: 14px;
+                }
+            }  
+        }
+        .skills-main {
+            margin-top: 15px;
+            .photoshop, .html, .php, .wordpress {
+                width: 125px;
+            }
+        }
+    }
+}
+@media all and (max-width:320px) {
+    .wr-skills {
+        .skills-main {
+            .photoshop, .html, .php, .wordpress {
+                width: 122px;
+            }
+            h3 {
+                font-size: 15px;
+            }
         }
     }
 }

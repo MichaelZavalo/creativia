@@ -31,6 +31,13 @@ $(document).ready(function () {
         }
     );
 });
+
+$('.menu-btn').on('click', function(){
+$(this).toggleClass('menu-btn-active');
+$('.menu-block').toggleClass('menu-block-active');
+$('.wr-promo').toggleClass('.wr-promo-active'); 
+})
+
 /*coll.addEventListener('click', function () {
     document.querySelector('.collapsible').style.backgroundColo;
 });

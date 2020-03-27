@@ -11,6 +11,7 @@
     }
 }
 .container-head {
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -29,16 +30,18 @@
         margin-bottom: 0px;
         margin-top: 38px;
         font-size: 16px;
+        text-align: center;
     }
 }
 .container-list {
+    width: 100%;
     margin-top: 100px;
     display: flex;
     outline: none;
+    justify-content: space-between;
     .container-list-main {
         flex-direction: column;
         width: 570px;
-        margin-right: 30px;
         .head-toggles {
             font-family: lato-reg;
             font-size: 16px;
@@ -46,6 +49,11 @@
             margin-top: 0px;
             text-align: justify;
             line-height: 1.4;
+        }
+    }
+    .decorate-image {
+        img {
+            width: 100%;
         }
     }
     .toggles {
@@ -61,6 +69,7 @@
         color: inherit;
         width: 100%;
         transition-duration: 0.5s;
+        outline: none;
         .fa-plus-circle {
             color: #505050;
             font-size: 18px;
@@ -94,14 +103,6 @@
         color: #ff0036;
     }
     .active {
-        display: flex;
-        height: 45px;
-        background-color: #f7f7f7;
-        position: relative;
-        padding: 0;
-        border: none;
-        font: inherit;
-        color: inherit;
         transition-duration: 0.5s;
         .fa-minus-circle {
             color: #ff0036;
@@ -240,5 +241,185 @@
     .active-clean:hover:after {
         background-image: url('../media/about/decorate-fire-active.png');
         cursor: pointer;
+    }
+}
+
+@media all and (max-width:1024px) {
+    .container-list {
+        .container-list-main {
+            width: 460px;
+        }
+    }
+    .decorate-image {
+        width: 460px;
+        img {
+            width: 100%;
+        }
+    }
+    .qualities p {
+        font-size: 15px;
+        padding: 0 2px;
+    }
+}
+@media all and (max-width:768px) {
+    .container-list {
+        .container-list-main {
+            width: 45%;
+             .head-toggles {
+                font-size: 13px;
+            }
+        }
+        .btn span{ 
+            font-size: 16px;
+        }
+        .btn i {
+            font-size: 14px;
+        }
+        .btn {
+            height: 35px;
+            .fa-plus-circle {
+                font-size: 15px;
+                width: 60px;
+                height: 35px;
+            }
+            span {
+                font-family: raleway-medium;
+                font-size: 16px;
+                height: 35px;
+            }
+        }
+        .active .fa-minus-circle {
+            font-size: 15px;
+            height: 35px;
+        }
+        .content{
+            font-size: 12px;
+        }
+    }
+    .decorate-image {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+    .qualities {
+        display: flex;
+        padding-top: 204px;
+        width: 100%;
+        justify-content: space-between;
+        h3 {
+            font-size: 15px;
+        }
+        p {
+            font-size: 13px;
+            margin-top: 10px;
+        }
+        .active-flat::after {
+            left: 5px;
+        }
+        .active-retina::after {
+            left: 5px;
+        }
+        .active-responsive::after {
+            left: 2px;
+        }
+        .active-clean::after {
+            left: 15px;
+        }
+    }
+} 
+@media all and (max-width:550px) {
+    .wr-about {
+        .decoration {
+            display: none;
+        }
+    }
+}
+@media all and (max-width:425px) {
+    .wr-about{
+        .container {
+            justify-content: center;
+            align-items: center;
+            padding-top: 35px;
+            padding-bottom: 40px;
+            flex-direction: column;
+        }
+        .decoration {
+            display: none;
+        }
+    }
+    .container-head h2 {
+        font-size: 25px;
+    }
+    .container-head h3 {
+        font-size: 14px;
+        margin-top: 25px;
+    }
+    .container-list {
+        margin-top: 30px;
+        .container-list-main {
+            width: 100%;
+             .head-toggles {
+                font-size: 13px;
+            }
+        }
+        .btn span{ 
+            font-size: 16px;
+        }
+        .btn i {
+            font-size: 14px;
+        }
+        .btn {
+            height: 35px;
+            .fa-plus-circle {
+                font-size: 15px;
+                width: 60px;
+                height: 35px;
+            }
+            span {
+                font-family: raleway-medium;
+                font-size: 16px;
+                height: 35px;
+            }
+        }
+        .active .fa-minus-circle {
+            font-size: 15px;
+            height: 35px;
+        }
+        .content{
+            font-size: 12px;
+        }
+    }
+    .decorate-image {
+        display: none;
+        width: 0px;
+        img {
+            width: 100%;
+        }
+    }
+    .qualities {
+        padding-top: 30px;
+        flex-wrap: wrap;
+        div:not(:first-of-type){
+            margin-top: 10px;
+        }
+        div {
+            width: 100%;
+        }
+        h3 {
+            font-size: 15px;
+        }
+        p {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .active-flat::after,.active-retina::after,.active-clean::after,.active-responsive::after {
+        display: none;  
+        }
+    }
+}
+@media all and (max-width:375px) {
+    .container-head h2 {
+        font-size: 20px;
     }
 }

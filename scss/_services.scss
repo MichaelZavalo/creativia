@@ -59,182 +59,110 @@
             margin:0;
         }
     }
-    .development {
+    .development,.wordpress,.ui-ux,.html-css,.applications,.responsive-layout {
         position: relative;
-        .fas {
-            font-weight: 600;
-        }
-        .fa-code::before {
-            font-size: 32.5px;
-            box-sizing: border-box;
-            padding: 12px 17px 13px 13px;
-            color: #262626;
-            text-align: center;
-            background-image: url('../media/services/back-icon.png');
-            background-size: 70px;
-            background-repeat: no-repeat;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
+    }
+    .fas {
+        font-weight: 600;
+    }
+    .applications,.responsive-layout,.ui-ux,.wordpress {
+        margin-top: 59px;
+    }
+    .fa-code::before,.fa-wordpress-simple::before,.fa-pencil-alt::before,.fa-html5::before,.fa-laptop::before,.fa-tablet-alt::before {        box-sizing: border-box;
+        color: #262626;
+        text-align: center;
+        background-size: 70px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }   
+    .fa-code::before {
+        font-size: 32.5px;
+        padding: 12px 17px 13px 13px;
+        background-image: url('../media/services/back-icon.png');
     }
     .development:hover {    
-        cursor: pointer;
         .fa-code::before {
             color: #fff;
             background-image: url('../media/services/back-icon-active.png');
         }
-        p {
-            color: #fff;
-            background-color: #3d2329;
-        }
     } 
-    .wordpress {
-        position: relative;
-        margin-top: 59px;
-        .fa-wordpress-simple::before {
-            font-size: 35px;
-            box-sizing: border-box;
-            padding: 12px 17px 10px 18px;
-            color: #262626;
-            text-align: center;
-            background-image: url('../media/services/back-icon.png');
-            background-size: 70px;
-            background-repeat: no-repeat;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
+    .fa-wordpress-simple::before {
+        font-size: 35px;
+        padding: 12px 17px 10px 18px;
+        background-image: url('../media/services/back-icon.png');
     }
     .wordpress:hover {
-        cursor: pointer;
         .fa-wordpress-simple::before {
             color: #fff;
             background-image: url('../media/services/back-icon-active.png');
         }
-        p {
-            color: #fff;
-            background-color: #3d2329;
-        }
     } 
-    .ui-ux {
-        position: relative;
-        margin-top: 59px;
-        .fas {
-            font-weight: 600;
-        }
-        .fa-pencil-alt::before {
-            font-size: 35px;
-            box-sizing: border-box;
-            padding: 12px 17px 10px 18px;
-            color: #262626;
-            text-align: center;
-            background-image: url('../media/services/back-icon.png');
-            background-size: 70px;
-            background-repeat: no-repeat;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
+    .fa-pencil-alt::before {
+        font-size: 35px;
+        padding: 12px 17px 10px 18px;
+        background-image: url('../media/services/back-icon.png');
     }
     .ui-ux:hover {
-        cursor: pointer;
         .fa-pencil-alt::before {
             color: #fff;
             background-image: url('../media/services/back-icon-active.png');
         }
-        p {
-            color: #fff;
-            background-color: #3d2329;
-        }
     } 
-    .html-css {
-        position: relative;
-        .fa-html5::before {
-            font-size: 35px;
-            box-sizing: border-box;
-            padding: 12px 22px 10px 22px;
-            color: #262626;
-            text-align: center;
-            background-image: url('../media/services/back-icon.png');
-            background-size: 70px;
-            background-repeat: no-repeat;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
+    .fa-html5::before {
+        font-size: 35px;
+        padding: 12px 22px 10px 22px;
+        background-image: url('../media/services/back-icon.png');
     }
     .html-css:hover {
-        cursor: pointer;
         .fa-html5::before {
             color: #fff;
             background-image: url('../media/services/back-icon-active.png');
         }
-        p {
-            color: #fff;
-            background-color: #3d2329;
-        }
     } 
-    .applications {
-        position: relative;
-        margin-top: 59px;
-        .fas {
-            font-weight: 600;
-        }
-        .fa-tablet-alt::before {
-            font-size: 35px;
-            box-sizing: border-box;
-            padding: 12px 20px 10px 19px;
-            color: #262626;
-            text-align: center;
-            background-image: url('../media/services/back-icon.png');
-            background-size: 70px;
-            background-repeat: no-repeat;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
+    .fa-tablet-alt::before {
+        font-size: 35px;
+        padding: 12px 20px 10px 19px;
+        background-image: url('../media/services/back-icon.png');
     }
     .applications:hover {
-        cursor: pointer;
         .fa-tablet-alt::before {
             color: #fff;
             background-image: url('../media/services/back-icon-active.png');
         }
-        p {
-            color: #fff;
-            background-color: #3d2329;
-        }
     }
-    .responsive-layout {
-        position: relative;
-        margin-top: 59px;
-        .fas {
-            font-weight: 600;
-        }
-        .fa-laptop::before {
-            font-size: 35px;
-            box-sizing: border-box;
-            padding: 12px 13px 10px 13px;
-            color: #262626;
-            text-align: center;
-            background-image: url('../media/services/back-icon.png');
-            background-size: 70px;
-            background-repeat: no-repeat;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
+    .fa-laptop::before {
+        font-size: 35px;
+        padding: 12px 13px 10px 13px;
+        background-image: url('../media/services/back-icon.png');
     }
-    .responsive-layout:hover {
-        cursor: pointer;
+    .responsive-layout:hover{
         .fa-laptop::before {
             color: #fff;
             background-image: url('../media/services/back-icon-active.png');
         }
+    }
+    .responsive-layout:hover,.applications:hover,.html-css:hover,.ui-ux:hover,.wordpress:hover,.development:hover {
+        cursor: pointer;
         p {
             color: #fff;
             background-color: #3d2329;
         }
     } 
+}
+@media all and (max-width:768px) {
+    
+}
+@media all and (max-width:550px) {
+    
+}
+@media all and (max-width:425px) {
+    
+}
+@media all and (max-width:375px) {
+   
+}
+@media all and (max-width:320px) {
+    
 }

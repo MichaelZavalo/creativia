@@ -15,6 +15,7 @@
                 margin-bottom: 0px;
                 font-size: 30px;
                 margin-top: 0px;
+                text-align: center;
             }
             span {
                     color: #ff0036;
@@ -25,6 +26,7 @@
                 margin-bottom: 0px;
                 margin-top: 38px;
                 font-size: 16px;
+                text-align: center;
             }
             img {
                 position: absolute;
@@ -37,10 +39,17 @@
         display: flex;
         justify-content: space-between;
         margin-top: 98px;
+        width: 100%;
     }
+    .wayne-pass,.srour-pass,.doe-pass,.de-pass{
+        width: 100%;
+        img{
+            width:100%;
+        }
+    }   
     .wayne, .srour, .doe, .de {
         width: 270px;
-        height: 361px;
+        height: 100%;
         line-height: 0.74;
         position: relative;
         h3 {
@@ -66,15 +75,15 @@
     }
     .wayne-hover, .srour-hover, .doe-hover, .de-hover {
         display: none;
-        width: 270px;
-        height: 361px;
+        width: 100%;
+        height: 100%;
         line-height: 0.74;
         position: absolute;
         top: 0;
         left: 0;
         .social-networks {
             width: 100%;
-            height: 240px;
+            height: 66.45%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -111,10 +120,196 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            background-color: #fff;
+            height: 33.55%;
         }
     }
-     .wayne:hover .wayne-hover,.srour:hover .srour-hover,.doe:hover .doe-hover,.de:hover .de-hover {
+    .wayne:hover .wayne-hover,.srour:hover .srour-hover,.doe:hover .doe-hover,.de:hover .de-hover {
         display: block;
         cursor: pointer;
+    }
+}
+@media all and (max-width:1024px) {
+    .wr-teamwork {
+        .container {
+            .teamwork-head {
+                img {
+                    left: 24%;
+                } 
+            }
+        }
+        .teamwork-main {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 98px;
+            width: 100%;
+            .wayne, .srour, .doe, .de {
+                margin: 0 31px;
+            }
+            .doe, .de {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+@media all and (max-width:768px) {
+    .wr-teamwork {
+        .container {
+            .teamwork-head {
+                img {
+                    left: 15%;
+                } 
+            }
+        }
+        .teamwork-main {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 98px;
+            width: 100%;
+            
+            .wayne, .srour, .doe, .de {
+                margin: 0px;
+                width: 36.8%;
+            }
+            .doe, .de {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+@media all and (max-width:700px) {
+    .wr-teamwork {
+        .container {
+            .teamwork-head {
+                img {
+                    display: none;
+                }
+            }
+        } 
+    }
+}
+@media all and (max-width:425px) {
+    .wr-teamwork {
+        .container {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .teamwork-head {
+                h2 {
+                    font-size: 25px;
+                }
+                h3 {
+                    margin-top: 20px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .teamwork-main {
+            margin-top: 45px;
+        }
+        .wayne, .srour, .doe, .de {
+            h3 {
+                font-size: 14px;
+                margin: 20px 0 0 0;
+            }
+            p {
+                font-size: 14px;
+                margin: 16px 0 25px 0;
+            }
+        }
+        .wayne-hover, .srour-hover, .doe-hover, .de-hover {
+            .social-networks {
+                height: 60%;
+                .facebook {
+                    width: 40px;
+                    margin: 0 2px;
+                }
+                .google {
+                    width: 40px;
+                    margin: 0 2px;
+                }
+                .twitter {
+                    width: 40px;
+                    margin: 0 2px;
+                }
+            }    
+            h3 {
+                font-size: 14px;
+                margin: 20px 0 0 0;
+            }
+            p {
+                font-size: 14px;
+                margin: 16px 0 25px 0;
+            }
+            .team-info-hover { 
+                height: 40%;
+            }
+        } 
+    }
+}
+@media all and (max-width:375px) {
+    .wr-teamwork {
+        .container {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            .teamwork-head {
+                h2 {
+                    font-size: 20px;
+                }
+                h3 {
+                    margin-top: 20px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .teamwork-main {
+            margin-top: 45px;
+        }
+        .wayne, .srour, .doe, .de {
+            h3 {
+                font-size: 14px;
+                margin: 20px 0 0 0;
+            }
+            p {
+                font-size: 14px;
+                margin: 16px 0 25px 0;
+            }
+        }
+        .wayne-hover, .srour-hover, .doe-hover, .de-hover {
+            .social-networks {
+                height: 57%;
+            }
+            .team-info-hover { 
+                height: 43%;
+            }
+        } 
+    }
+}
+@media all and (max-width:320px) {
+    .wr-teamwork {
+        .container {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            .teamwork-head {
+                h2 {
+                    font-size: 20px;
+                }
+                h3 {
+                    margin-top: 20px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .teamwork-main {
+            margin-top: 25px;
+            .doe, .de {
+                margin-top: 10px;
+            }
+        }
+        .wayne:hover .wayne-hover,.srour:hover .srour-hover,.doe:hover .doe-hover,.de:hover .de-hover {
+            display: none;
+            cursor: pointer;
+        } 
     }
 }

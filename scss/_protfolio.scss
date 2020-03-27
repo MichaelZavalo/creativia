@@ -5,6 +5,7 @@
         align-items: center;
         flex-direction: column;
         padding-top: 95px;
+        padding-bottom: 100px;
         h2 {
             font-family: raleway-bold;
             font-size: 30px;
@@ -15,8 +16,8 @@
             display: flex;
             list-style-type: none;
             justify-content: center;
-            margin: 22px 0 0 0;
-            //padding: 0 0 0 5px;
+            margin: 0 auto;
+            margin-top: 22px;
         }
         li {
             margin: 0 10.5px;
@@ -27,6 +28,7 @@
             font-family: lato-bold;
             font-size: 16px;
             color: #a4a4a4;
+            outline: none;
         }
         a:hover {
             color: #ff0036;
@@ -34,11 +36,13 @@
     }
 }
 .container-portfolio {
-    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     height: 700px;
-    width: 100% ;
+    width: 100%;
+    div {
+        overflow: hidden;
+    }
     .money {
         width: 29%;
         height: 50%;
@@ -430,5 +434,246 @@
         left: 50%;
         z-index: 5;
         background-image: url(../media/portfolio/check-shadow.png);
+    }
+}
+@media all and (max-width:1024px) {
+    .container-portfolio {
+        .cards {
+            img {
+            left: 18%;
+            }   
+        }
+    } 
+}
+@media all and (max-width:991px) {
+    .container-portfolio {
+        .cards {
+            img {
+            left: 15%;
+            }   
+        }
+        .converter{
+            img {
+                top: 31.3%;
+                left: 25%;
+            }
+        } 
+        .check{
+            img {
+            position: absolute;
+            top: 33%;
+            left: 23%;
+            z-index: 10;
+            }
+        } 
+    } 
+}
+@media all and (max-width:768px) {
+    .wr-protfolio {
+        .container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        }
+    }
+    .container-portfolio {
+        height: 500px;
+        .money { 
+            img {
+            top: 33.4%;
+            left: 15%;
+            }
+        }
+        .bank { 
+            img {
+            top: 19%;
+            left: 5%;
+            }
+        }
+        .flower { 
+            img {
+            top: 19%;
+            left: 21%;
+            }
+        }
+        .cards {
+            img {
+            top: 19%;
+            left: 15%;
+            }   
+        }
+        .calculator {
+            img {
+            top: 26%;
+            left: 22%;
+            }
+        }
+        .converter {
+            img {
+            top: 25.3%;
+            left: 17%;
+            }
+        }
+        .wallet {
+            img {
+            top: 21%;
+            left: 10%;
+            }
+        }
+        .check {
+            img {
+            top: 26.5%;
+            left: 18%;
+            }
+        }
+        .money .active-item,.bank .active-item,.flower .active-item,.cards .active-item,.calculator .active-item,.converter .active-item,.wallet .active-item,.check .active-item {
+            p{
+                top: 52%;
+                left: 32%; 
+            }
+            img {
+                top: 40%;
+                left: 46%;
+            }
+        }
+    } 
+}  
+@media all and (max-width:425px) {
+    .wr-protfolio{ 
+        padding-bottom: 80px;
+        .container{
+            padding-top: 35px;
+            padding-bottom: 50px;
+            h2 {
+                font-size: 25px;
+            }
+            ul {
+                margin: 25px 0 0 0;
+                padding: 0;
+            }
+            li {
+                margin: 0 12px;
+            }
+            a{
+                font-size: 13px;
+            }
+        }
+    }
+    .container-portfolio {
+        height: 300px;
+        .money {
+            img {
+                top: 33.4% 
+            }
+        }
+        .bank { 
+            img {
+                top: 15%;
+            }
+        }
+        .flower {
+            img {
+                top: 13%;
+            }
+        }
+        .cards {
+            img {
+                top: 25%;
+            }
+        }
+        .calculator {
+            img {
+                top: 20%;
+            }
+        }
+        .converter {
+            img {
+                top: 27%;
+            }
+        } 
+        .check {
+            img {
+                top: 33.5%;
+            }
+        }
+        .money,.bank,.flower,.cards,.calculator,.converter,.wallet,.check {
+            width: 25%;
+        }
+        .money img,.bank img,.flower img,.cards img,.calculator img,.converter img,.wallet img,.check img {
+           width: 80%;
+           left: 21%;
+        }
+        .money::after,.bank::after,.flower::after,.cards::after,.calculator::after,.converter::after,.wallet::after,.check::after {
+            display: none;
+        }
+        .money .active-item,.bank .active-item,.flower .active-item,.cards .active-item,.calculator .active-item,.converter .active-item,.wallet .active-item,.check .active-item {
+            p{
+                top: 52%;
+                left: 32%;
+                font-size: 13px; 
+            }
+            img {
+                width: 15%;
+                top: 40%;
+                left: 46%;
+            }
+        }
+    }
+}
+@media all and (max-width:375px) {
+    .wr-protfolio{ 
+        padding-bottom: 70px;
+        .container{
+            h2 {
+                font-size: 20px;
+            }
+            li {
+                margin: 0 5px;
+            }
+            a{
+                font-size: 12px;
+            }
+        }
+    }
+    .container-portfolio {
+        height: 200px;
+        .money {
+            img {
+                top: 37.4% 
+            }
+        }
+    }
+    .container-portfolio .money img, .container-portfolio .bank img, .container-portfolio .flower img, .container-portfolio .cards img, .container-portfolio .calculator img, .container-portfolio .converter img, .container-portfolio .wallet img, .container-portfolio .check img {
+        width: 85%;
+        left: 15%;
+    }
+}
+@media all and (max-width:320px) {
+    .wr-protfolio{ 
+        padding-bottom: 50px;
+        .container{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            h2 {
+                font-size: 20px;
+            }
+            ul {
+                margin-top: 15px;
+            }
+            li {
+                margin: 0 3px;
+            }
+            a{
+                font-size: 11px;
+            }
+        }
+    }
+    .container-portfolio{
+        .money:hover .active-item,.bank:hover .active-item,.flower:hover .active-item,.cards:hover .active-item,.calculator:hover .active-item,.converter:hover .active-item,.wallet:hover .active-item,.check:hover .active-item {
+            display: none;
+        }
+        .money:hover ,.bank:hover ,.flower:hover,.cards:hover ,.calculator:hover ,.converter:hover ,.wallet:hover ,.check:hover {
+            box-shadow: inset 0px 0px 5px 2px #ff0036;
+            cursor: pointer;
+        }
     }
 }

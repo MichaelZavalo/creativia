@@ -41,12 +41,13 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 100px;
+        flex-wrap: wrap;
         ul {
             align-items: center;
             width: 270px;
             list-style-type: none;
             padding: 0;
-            margin-top: 0;
+            margin: 0;
         }
         span { 
             text-align: end;
@@ -108,6 +109,7 @@
             align-items: center;
             background-color: #393939;
             box-sizing: border-box;
+            outline: none;
         }
         div:hover a, div:hover .price, div:hover span {
             background-color: #ff0036;

@@ -16,18 +16,23 @@
                 <a href="#" class="logo">
                     <img class="logotip" src="media/why-creativia/logo.png" alt="logo">
                 </a>
-                <nav>
-                    <ul>
-                        <li class="active-menu-item"><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">PORTFOLIO</a></li>
-                        <li><a href="#">CLIENTS</a></li>
-                        <li><a href="#">TEAM</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                </nav>
+                <div class="menu-block">
+                    <nav class="menu-nav">
+                        <ul>
+                            <li class="active-menu-item"><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">PORTFOLIO</a></li>
+                            <li><a href="#">CLIENTS</a></li>
+                            <li><a href="#">TEAM</a></li>
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <button class="menu-btn">
+                        <span></span>
+                    </button>
+                </div>
             </div>
         </header>
         <section class="wr-promo">
@@ -97,8 +102,8 @@
                         <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>
                     </div>    
                 </div>
-                <div>
-                    <img src="media/about/group-photo.png" alt="decorate-photo">
+                <div class="decorate-image">
+                    <img  src="media/about/group-photo.png" alt="decorate-photo">
                 </div>
             </div>
             <img class="decoration" src="media/about/decorate-sexangle.png" alt="decorate-sexangle">
@@ -205,24 +210,24 @@
             <div class="btns-container">
                 <div class="btns-container-columns">
                     <div class="left-side">
-                        <a href="#" class="btn-left first">
+                        <a href="#" class="btn-left btns first">
                             <p>UNLIMITED COLOR OPTIONS</p>
                         </a>
-                        <a href="#" class="btn-left second">
+                        <a href="#" class="btn-left btns second">
                             <p>OUTSTANDING SUPPORT</p>
                         </a>
-                        <a href="#" class="btn-left third">
+                        <a href="#" class="btn-left btns third">
                             <p>RETINA READY</p>
                         </a>
                     </div>
                     <div class="right-side">
-                        <a href="#" class="btn-right first">
+                        <a href="#" class="btn-right btns first">
                             <p>UNLIMITED COLOR OPTIONS</p>
                         </a>
-                        <a href="#" class="btn-right second">
+                        <a href="#" class="btn-right btns second">
                             <p>OUTSTANDING SUPPORT</p>
                         </a>
-                        <a href="#" class="btn-right third">
+                        <a href="#" class="btn-right btns third">
                             <p>RETINA READY</p>
                         </a>
                     </div>
@@ -245,15 +250,15 @@
                     <div class="clients-slider">
                         <div>
                             <img src="media/clints/amr-srour.png" alt="amr-srour1">
-                            <p>AMR SROUR</p>
+                            <p class="content">AMR SROUR</p>
                         </div>
                         <div>
                             <img src="media/clints/amr-srour.png" alt="amr-srour2">
-                            <p>BRUCE WAYNE</p>
+                            <p class="content">BRUCE WAYNE</p>
                         </div>
                         <div>
                             <img src="media/clints/amr-srour.png" alt="amr-srour3">
-                            <p>SARAH DOE</p>
+                            <p class="content">SARAH DOE</p>
                         </div>
                     </div>
                 </div>
@@ -279,7 +284,7 @@
             </div>
             <div class="teamwork-main">
                 <div class="wayne">
-                    <div>
+                    <div class="wayne-pass">
                         <img src="media/teamwork/bruce-wayne.jpg" alt="wayne">
                         <div class="team-info">
                             <h3>BRUCE WAYNE</h3>
@@ -299,7 +304,7 @@
                     </div>
                 </div>
                 <div class="srour">
-                    <div>
+                    <div class="srour-pass">
                         <img src="media/teamwork/amr-srour.jpg" alt="srour">
                         <div class="team-info">
                             <h3>AMR SROUR</h3>
@@ -319,7 +324,7 @@
                     </div>
                 </div>
                 <div class="doe">
-                    <div class="social-networks">
+                    <div class="doe-pass">
                         <img src="media/teamwork/sarah-doe.jpg" alt="doe">
                         <div class="team-info">
                             <h3>SARAH DOE</h3>
@@ -339,7 +344,7 @@
                     </div>
                 </div>
                 <div class="de">
-                    <div class="team-hover">
+                    <div class="de-pass">
                         <img src="media/teamwork/johan-de.jpg" alt="de">
                         <div class="team-info">
                             <h3>JOHAN DE</h3>
@@ -357,8 +362,7 @@
                             <p>Webdesigner</p>
                         </div>
                     </div>
-                </div>
-                
+                </div> 
             </div>
         </div>
     </section>
@@ -623,8 +627,8 @@
             </footer>
         </div>
     </section>
-    <script src="./js/jquery-3.4.1.min.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/javascript.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/javascript.js"></script>
 </body>
 </html>

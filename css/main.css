@@ -262,7 +262,7 @@ header .logotip {
     width: 80%;
   }
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 455px) {
   header {
     height: 40px;
     background-color: rgba(0, 0, 0, 0.5);

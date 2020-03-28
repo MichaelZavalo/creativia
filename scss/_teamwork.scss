@@ -156,8 +156,11 @@
 @media all and (max-width:768px) {
     .wr-teamwork {
         .container {
+            padding-top:60px;
+            padding-bottom: 60px;
             .teamwork-head {
                 img {
+                    top: -69px;
                     left: 15%;
                 } 
             }
@@ -166,9 +169,8 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin-top: 98px;
+            margin-top: 60px;
             width: 100%;
-            
             .wayne, .srour, .doe, .de {
                 margin: 0px;
                 width: 36.8%;
@@ -190,7 +192,7 @@
         } 
     }
 }
-@media all and (max-width:425px) {
+@media all and (max-width:455px) {
     .wr-teamwork {
         .container {
             padding-top: 50px;
@@ -279,6 +281,18 @@
         .wayne-hover, .srour-hover, .doe-hover, .de-hover {
             .social-networks {
                 height: 57%;
+                .facebook {
+                    width: 35px;
+                    margin: 0 2px;
+                }
+                .google {
+                    width: 35px;
+                    margin: 0 2px;
+                }
+                .twitter {
+                    width: 35px;
+                    margin: 0 2px;
+                }
             }
             .team-info-hover { 
                 height: 43%;

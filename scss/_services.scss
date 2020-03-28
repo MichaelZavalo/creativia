@@ -14,6 +14,7 @@
                 margin-bottom: 0px;
                 font-size: 30px;
                 margin: 0 auto;
+                text-align: center;
             }
             span {
                 color: #ff0036;
@@ -24,10 +25,7 @@
                 margin-bottom: 0px;
                 margin-top: 38px;
                 font-size: 16px;
-            }
-            .decoration {
-                margin: 0 auto;
-                margin-top: 98px;
+                text-align: center;
             }
         }  
     }
@@ -68,7 +66,8 @@
     .applications,.responsive-layout,.ui-ux,.wordpress {
         margin-top: 59px;
     }
-    .fa-code::before,.fa-wordpress-simple::before,.fa-pencil-alt::before,.fa-html5::before,.fa-laptop::before,.fa-tablet-alt::before {        box-sizing: border-box;
+    .fa-code::before,.fa-wordpress-simple::before,.fa-pencil-alt::before,.fa-html5::before,.fa-laptop::before,.fa-tablet-alt::before {
+        box-sizing: border-box;
         color: #262626;
         text-align: center;
         background-size: 70px;
@@ -76,72 +75,31 @@
         position: absolute;
         top: 0;
         left: 0;
+        background-image: url('../media/services/back-icon.png');
     }   
     .fa-code::before {
         font-size: 32.5px;
         padding: 12px 17px 13px 13px;
-        background-image: url('../media/services/back-icon.png');
     }
-    .development:hover {    
-        .fa-code::before {
-            color: #fff;
-            background-image: url('../media/services/back-icon-active.png');
-        }
-    } 
     .fa-wordpress-simple::before {
         font-size: 35px;
         padding: 12px 17px 10px 18px;
-        background-image: url('../media/services/back-icon.png');
     }
-    .wordpress:hover {
-        .fa-wordpress-simple::before {
-            color: #fff;
-            background-image: url('../media/services/back-icon-active.png');
-        }
-    } 
     .fa-pencil-alt::before {
         font-size: 35px;
         padding: 12px 17px 10px 18px;
-        background-image: url('../media/services/back-icon.png');
     }
-    .ui-ux:hover {
-        .fa-pencil-alt::before {
-            color: #fff;
-            background-image: url('../media/services/back-icon-active.png');
-        }
-    } 
     .fa-html5::before {
         font-size: 35px;
         padding: 12px 22px 10px 22px;
-        background-image: url('../media/services/back-icon.png');
     }
-    .html-css:hover {
-        .fa-html5::before {
-            color: #fff;
-            background-image: url('../media/services/back-icon-active.png');
-        }
-    } 
     .fa-tablet-alt::before {
         font-size: 35px;
         padding: 12px 20px 10px 19px;
-        background-image: url('../media/services/back-icon.png');
-    }
-    .applications:hover {
-        .fa-tablet-alt::before {
-            color: #fff;
-            background-image: url('../media/services/back-icon-active.png');
-        }
     }
     .fa-laptop::before {
         font-size: 35px;
         padding: 12px 13px 10px 13px;
-        background-image: url('../media/services/back-icon.png');
-    }
-    .responsive-layout:hover{
-        .fa-laptop::before {
-            color: #fff;
-            background-image: url('../media/services/back-icon-active.png');
-        }
     }
     .responsive-layout:hover,.applications:hover,.html-css:hover,.ui-ux:hover,.wordpress:hover,.development:hover {
         cursor: pointer;
@@ -149,20 +107,164 @@
             color: #fff;
             background-color: #3d2329;
         }
+        .fa-code::before,.fa-wordpress-simple::before,.fa-pencil-alt::before,.fa-html5::before,.fa-laptop::before,.fa-tablet-alt::before {
+            color: #fff;
+            background-image: url('../media/services/back-icon-active.png');
+        }
     } 
 }
+@media all and (max-width:1024px) {
+    .wr-services {
+        .services-main {
+            justify-content: space-around;
+        }
+        .first-column, .second-column {
+            width: 460px;
+            p { 
+                padding: 20px;
+            }
+        }
+    }
+}
+@media all and (max-width:991px) {
+    .wr-services {
+        .first-column, .second-column {
+            width: 47%;
+            p {
+                padding: 5px;
+                margin: 33px 0 0 0;
+            }
+            h4 {
+                padding-left: 80px;
+            }
+        }
+    }
+}
 @media all and (max-width:768px) {
-    
+    .wr-services {
+        .container {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        .services-main {
+            flex-direction: column;
+            margin-top: 50px;
+        }
+        .first-column, .second-column {
+            width: 100%;
+            h4 {
+                font-size: 18px;
+            }
+        }
+        .development,.wordpress,.ui-ux,.html-css,.applications,.responsive-layout {
+        width: 80%;
+        margin: 30px auto;
+        }
+        .development,.html-css {
+            margin-top: 0;
+        }
+    }
 }
 @media all and (max-width:550px) {
-    
+    .wr-services {
+        .container{
+            padding-top: 60px;
+            padding-bottom: 50px;
+        }
+        .first-column, .second-column {
+            p {
+                font-size: 14px; 
+                margin: 20px 0 0 0;
+            }
+            h4 {
+                font-size: 16px;
+            }
+        }
+        .development,.wordpress,.ui-ux,.html-css,.applications,.responsive-layout {
+        width: 80%;
+        margin: 30px auto;
+        }
+        .development,.html-css {
+            margin-top: 0;
+        }
+        .fa-code::before,.fa-wordpress-simple::before,.fa-pencil-alt::before,.fa-html5::before,.fa-laptop::before,.fa-tablet-alt::before {        box-sizing: border-box;
+            color: #fff;
+            background-image:none;
+        }
+        .responsive-layout:hover,.applications:hover,.html-css:hover,.ui-ux:hover,.wordpress:hover,.development:hover {
+            .fa-code::before,.fa-wordpress-simple::before,.fa-pencil-alt::before,.fa-html5::before,.fa-laptop::before,.fa-tablet-alt::before {
+                color: #ff0036;
+                background-image: none;
+            }
+        }    
+    } 
 }
-@media all and (max-width:425px) {
-    
+@media all and (max-width:455px) {
+    .wr-services {
+        .container {
+            flex-direction: column;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .services-head {  
+                h2 {
+                    font-size: 25px;
+                }
+                h3 {
+                    font-size: 14px;
+                    margin-top: 20px;
+                }
+                .decoration {
+                    margin: 0 auto;
+                    margin-top: 98px;
+                }
+            }  
+        }
+        .services-main {
+            margin-top: 20px;
+        }
+        .first-column,.second-column {
+            p {
+                margin-top: 10px;
+            }
+        }
+        .fa-code::before,.fa-wordpress-simple::before,.fa-pencil-alt::before,.fa-html5::before,.fa-laptop::before,.fa-tablet-alt::before {
+            font-size: 25px;
+            padding: 12px 17px 13px 13px;
+        }
+        .development,.wordpress,.ui-ux,.html-css,.applications,.responsive-layout {
+            width: 80%;
+            margin: 10px auto;
+        }
+            .development,.html-css {
+            margin-top: 0;
+        }
+    }
 }
 @media all and (max-width:375px) {
-   
+    .wr-services {
+        .container {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            .services-head {  
+                h2 {
+                    font-size: 20px;
+                }
+            }
+        }
+        .first-column,.second-column {
+            h4 {
+                font-size: 14px;
+            }
+        }
+    }
 }
 @media all and (max-width:320px) {
-    
+    .wr-services {
+        .first-column,.second-column {
+            h4 {
+                font-size: 14px;
+                padding-left: 60px;
+            }
+        }
+    }
 }

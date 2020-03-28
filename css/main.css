@@ -208,7 +208,7 @@ header .logotip {
     padding: 0px;
   }
   .menu-block nav li {
-    margin-left: 19px;
+    margin-left: 18px;
   }
 
   .slider {
@@ -226,10 +226,13 @@ header .logotip {
 }
 @media all and (max-width: 991px) {
   .menu-block nav {
-    margin: 0px;
+    margin-left: 5px;
   }
   .menu-block nav li {
-    margin-left: 15px;
+    margin-left: 7px;
+  }
+  .menu-block nav a {
+    font-size: 14px;
   }
 
   .slider {
@@ -247,16 +250,10 @@ header .logotip {
     top: 0px;
     width: 100%;
   }
-  header .menu-block nav li {
-    margin-left: 9px;
-  }
-  header .menu-block nav a {
-    font-size: 14px;
-  }
 
   .wr-promo .container {
-    padding-top: 85px;
-    padding-bottom: 85px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .wr-promo .slider {
     width: 80%;
@@ -689,6 +686,17 @@ header .logotip {
   }
 }
 @media all and (max-width: 768px) {
+  .wr-about .container {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  .wr-about .decoration {
+    margin-top: 47px;
+  }
+
+  .container-list {
+    margin-top: 60px;
+  }
   .container-list .container-list-main {
     width: 45%;
   }
@@ -731,7 +739,7 @@ header .logotip {
 
   .qualities {
     display: flex;
-    padding-top: 204px;
+    padding-top: 154px;
     width: 100%;
     justify-content: space-between;
   }
@@ -759,6 +767,24 @@ header .logotip {
   .wr-about .decoration {
     display: none;
   }
+
+  .container-list {
+    margin-top: 30px;
+  }
+  .container-list .container-list-main {
+    width: 100%;
+  }
+  .container-list .container-list-main .head-toggles {
+    font-size: 13px;
+  }
+
+  .decorate-image {
+    display: none;
+    width: 0px;
+  }
+  .decorate-image img {
+    width: 100%;
+  }
 }
 @media all and (max-width: 455px) {
   .wr-about .container {
@@ -781,15 +807,6 @@ header .logotip {
     margin-top: 25px;
   }
 
-  .container-list {
-    margin-top: 30px;
-  }
-  .container-list .container-list-main {
-    width: 100%;
-  }
-  .container-list .container-list-main .head-toggles {
-    font-size: 13px;
-  }
   .container-list .btn span {
     font-size: 16px;
   }
@@ -1312,9 +1329,12 @@ header .logotip {
   }
 }
 @media all and (max-width: 768px) {
+  .wr-protfolio {
+    padding-bottom: 60px;
+  }
   .wr-protfolio .container {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .container-portfolio {
@@ -1699,6 +1719,14 @@ header .logotip {
     display: none;
   }
 }
+@media all and (max-width: 550px) {
+  .wr-feature .btns-container .left-side .btn-left {
+    width: 200px;
+  }
+  .wr-feature .btns-container .right-side .btn-right {
+    width: 200px;
+  }
+}
 @media all and (max-width: 455px) {
   .wr-feature a {
     font-size: 12px;
@@ -1740,7 +1768,7 @@ header .logotip {
 }
 @media all and (max-width: 375px) {
   .wr-feature .container {
-    padding-bottom: 45px;
+    padding: 50px 0 45px 0;
   }
   .wr-feature .container h2 {
     font-size: 20px;
@@ -2024,7 +2052,8 @@ header .logotip {
 }
 @media all and (max-width: 768px) {
   .wr-clients .container {
-    padding-top: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .wr-clients .container .clients-head h3 {
     margin-top: 20px;
@@ -2032,7 +2061,7 @@ header .logotip {
 
   .clients-main {
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 60px;
   }
   .clients-main .happy-clients {
     width: 100%;
@@ -2342,14 +2371,19 @@ header .logotip {
   }
 }
 @media all and (max-width: 768px) {
+  .wr-teamwork .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .wr-teamwork .container .teamwork-head img {
+    top: -69px;
     left: 15%;
   }
   .wr-teamwork .teamwork-main {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 98px;
+    margin-top: 60px;
     width: 100%;
   }
   .wr-teamwork .teamwork-main .wayne, .wr-teamwork .teamwork-main .srour, .wr-teamwork .teamwork-main .doe, .wr-teamwork .teamwork-main .de {
@@ -2365,7 +2399,7 @@ header .logotip {
     display: none;
   }
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 455px) {
   .wr-teamwork .container {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -2440,6 +2474,18 @@ header .logotip {
   }
   .wr-teamwork .wayne-hover .social-networks, .wr-teamwork .srour-hover .social-networks, .wr-teamwork .doe-hover .social-networks, .wr-teamwork .de-hover .social-networks {
     height: 57%;
+  }
+  .wr-teamwork .wayne-hover .social-networks .facebook, .wr-teamwork .srour-hover .social-networks .facebook, .wr-teamwork .doe-hover .social-networks .facebook, .wr-teamwork .de-hover .social-networks .facebook {
+    width: 35px;
+    margin: 0 2px;
+  }
+  .wr-teamwork .wayne-hover .social-networks .google, .wr-teamwork .srour-hover .social-networks .google, .wr-teamwork .doe-hover .social-networks .google, .wr-teamwork .de-hover .social-networks .google {
+    width: 35px;
+    margin: 0 2px;
+  }
+  .wr-teamwork .wayne-hover .social-networks .twitter, .wr-teamwork .srour-hover .social-networks .twitter, .wr-teamwork .doe-hover .social-networks .twitter, .wr-teamwork .de-hover .social-networks .twitter {
+    width: 35px;
+    margin: 0 2px;
   }
   .wr-teamwork .wayne-hover .team-info-hover, .wr-teamwork .srour-hover .team-info-hover, .wr-teamwork .doe-hover .team-info-hover, .wr-teamwork .de-hover .team-info-hover {
     height: 43%;
@@ -2533,6 +2579,12 @@ header .logotip {
 }
 
 @media all and (max-width: 768px) {
+  .wr-skills .container {
+    padding-bottom: 60px;
+  }
+  .wr-skills .container .skills-head h2 {
+    margin-top: 60px;
+  }
   .wr-skills .skills-main {
     flex-wrap: wrap;
     justify-content: space-around;
@@ -2650,6 +2702,7 @@ header .logotip {
   margin-bottom: 0px;
   font-size: 30px;
   margin: 0 auto;
+  text-align: center;
 }
 .wr-services .container .services-head span {
   color: #ff0036;
@@ -2660,10 +2713,7 @@ header .logotip {
   margin-bottom: 0px;
   margin-top: 38px;
   font-size: 16px;
-}
-.wr-services .container .services-head .decoration {
-  margin: 0 auto;
-  margin-top: 98px;
+  text-align: center;
 }
 .wr-services .services-main {
   display: flex;
@@ -2711,60 +2761,31 @@ header .logotip {
   position: absolute;
   top: 0;
   left: 0;
+  background-image: url("../media/services/back-icon.png");
 }
 .wr-services .fa-code::before {
   font-size: 32.5px;
   padding: 12px 17px 13px 13px;
-  background-image: url("../media/services/back-icon.png");
-}
-.wr-services .development:hover .fa-code::before {
-  color: #fff;
-  background-image: url("../media/services/back-icon-active.png");
 }
 .wr-services .fa-wordpress-simple::before {
   font-size: 35px;
   padding: 12px 17px 10px 18px;
-  background-image: url("../media/services/back-icon.png");
-}
-.wr-services .wordpress:hover .fa-wordpress-simple::before {
-  color: #fff;
-  background-image: url("../media/services/back-icon-active.png");
 }
 .wr-services .fa-pencil-alt::before {
   font-size: 35px;
   padding: 12px 17px 10px 18px;
-  background-image: url("../media/services/back-icon.png");
-}
-.wr-services .ui-ux:hover .fa-pencil-alt::before {
-  color: #fff;
-  background-image: url("../media/services/back-icon-active.png");
 }
 .wr-services .fa-html5::before {
   font-size: 35px;
   padding: 12px 22px 10px 22px;
-  background-image: url("../media/services/back-icon.png");
-}
-.wr-services .html-css:hover .fa-html5::before {
-  color: #fff;
-  background-image: url("../media/services/back-icon-active.png");
 }
 .wr-services .fa-tablet-alt::before {
   font-size: 35px;
   padding: 12px 20px 10px 19px;
-  background-image: url("../media/services/back-icon.png");
-}
-.wr-services .applications:hover .fa-tablet-alt::before {
-  color: #fff;
-  background-image: url("../media/services/back-icon-active.png");
 }
 .wr-services .fa-laptop::before {
   font-size: 35px;
   padding: 12px 13px 10px 13px;
-  background-image: url("../media/services/back-icon.png");
-}
-.wr-services .responsive-layout:hover .fa-laptop::before {
-  color: #fff;
-  background-image: url("../media/services/back-icon-active.png");
 }
 .wr-services .responsive-layout:hover, .wr-services .applications:hover, .wr-services .html-css:hover, .wr-services .ui-ux:hover, .wr-services .wordpress:hover, .wr-services .development:hover {
   cursor: pointer;
@@ -2773,7 +2794,139 @@ header .logotip {
   color: #fff;
   background-color: #3d2329;
 }
+.wr-services .responsive-layout:hover .fa-code::before, .wr-services .responsive-layout:hover .fa-wordpress-simple::before, .wr-services .responsive-layout:hover .fa-pencil-alt::before, .wr-services .responsive-layout:hover .fa-html5::before, .wr-services .responsive-layout:hover .fa-laptop::before, .wr-services .responsive-layout:hover .fa-tablet-alt::before, .wr-services .applications:hover .fa-code::before, .wr-services .applications:hover .fa-wordpress-simple::before, .wr-services .applications:hover .fa-pencil-alt::before, .wr-services .applications:hover .fa-html5::before, .wr-services .applications:hover .fa-laptop::before, .wr-services .applications:hover .fa-tablet-alt::before, .wr-services .html-css:hover .fa-code::before, .wr-services .html-css:hover .fa-wordpress-simple::before, .wr-services .html-css:hover .fa-pencil-alt::before, .wr-services .html-css:hover .fa-html5::before, .wr-services .html-css:hover .fa-laptop::before, .wr-services .html-css:hover .fa-tablet-alt::before, .wr-services .ui-ux:hover .fa-code::before, .wr-services .ui-ux:hover .fa-wordpress-simple::before, .wr-services .ui-ux:hover .fa-pencil-alt::before, .wr-services .ui-ux:hover .fa-html5::before, .wr-services .ui-ux:hover .fa-laptop::before, .wr-services .ui-ux:hover .fa-tablet-alt::before, .wr-services .wordpress:hover .fa-code::before, .wr-services .wordpress:hover .fa-wordpress-simple::before, .wr-services .wordpress:hover .fa-pencil-alt::before, .wr-services .wordpress:hover .fa-html5::before, .wr-services .wordpress:hover .fa-laptop::before, .wr-services .wordpress:hover .fa-tablet-alt::before, .wr-services .development:hover .fa-code::before, .wr-services .development:hover .fa-wordpress-simple::before, .wr-services .development:hover .fa-pencil-alt::before, .wr-services .development:hover .fa-html5::before, .wr-services .development:hover .fa-laptop::before, .wr-services .development:hover .fa-tablet-alt::before {
+  color: #fff;
+  background-image: url("../media/services/back-icon-active.png");
+}
 
+@media all and (max-width: 1024px) {
+  .wr-services .services-main {
+    justify-content: space-around;
+  }
+  .wr-services .first-column, .wr-services .second-column {
+    width: 460px;
+  }
+  .wr-services .first-column p, .wr-services .second-column p {
+    padding: 20px;
+  }
+}
+@media all and (max-width: 991px) {
+  .wr-services .first-column, .wr-services .second-column {
+    width: 47%;
+  }
+  .wr-services .first-column p, .wr-services .second-column p {
+    padding: 5px;
+    margin: 33px 0 0 0;
+  }
+  .wr-services .first-column h4, .wr-services .second-column h4 {
+    padding-left: 80px;
+  }
+}
+@media all and (max-width: 768px) {
+  .wr-services .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .wr-services .services-main {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .wr-services .first-column, .wr-services .second-column {
+    width: 100%;
+  }
+  .wr-services .first-column h4, .wr-services .second-column h4 {
+    font-size: 18px;
+  }
+  .wr-services .development, .wr-services .wordpress, .wr-services .ui-ux, .wr-services .html-css, .wr-services .applications, .wr-services .responsive-layout {
+    width: 80%;
+    margin: 30px auto;
+  }
+  .wr-services .development, .wr-services .html-css {
+    margin-top: 0;
+  }
+}
+@media all and (max-width: 550px) {
+  .wr-services .container {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+  .wr-services .first-column p, .wr-services .second-column p {
+    font-size: 14px;
+    margin: 20px 0 0 0;
+  }
+  .wr-services .first-column h4, .wr-services .second-column h4 {
+    font-size: 16px;
+  }
+  .wr-services .development, .wr-services .wordpress, .wr-services .ui-ux, .wr-services .html-css, .wr-services .applications, .wr-services .responsive-layout {
+    width: 80%;
+    margin: 30px auto;
+  }
+  .wr-services .development, .wr-services .html-css {
+    margin-top: 0;
+  }
+  .wr-services .fa-code::before, .wr-services .fa-wordpress-simple::before, .wr-services .fa-pencil-alt::before, .wr-services .fa-html5::before, .wr-services .fa-laptop::before, .wr-services .fa-tablet-alt::before {
+    box-sizing: border-box;
+    color: #fff;
+    background-image: none;
+  }
+  .wr-services .responsive-layout:hover .fa-code::before, .wr-services .responsive-layout:hover .fa-wordpress-simple::before, .wr-services .responsive-layout:hover .fa-pencil-alt::before, .wr-services .responsive-layout:hover .fa-html5::before, .wr-services .responsive-layout:hover .fa-laptop::before, .wr-services .responsive-layout:hover .fa-tablet-alt::before, .wr-services .applications:hover .fa-code::before, .wr-services .applications:hover .fa-wordpress-simple::before, .wr-services .applications:hover .fa-pencil-alt::before, .wr-services .applications:hover .fa-html5::before, .wr-services .applications:hover .fa-laptop::before, .wr-services .applications:hover .fa-tablet-alt::before, .wr-services .html-css:hover .fa-code::before, .wr-services .html-css:hover .fa-wordpress-simple::before, .wr-services .html-css:hover .fa-pencil-alt::before, .wr-services .html-css:hover .fa-html5::before, .wr-services .html-css:hover .fa-laptop::before, .wr-services .html-css:hover .fa-tablet-alt::before, .wr-services .ui-ux:hover .fa-code::before, .wr-services .ui-ux:hover .fa-wordpress-simple::before, .wr-services .ui-ux:hover .fa-pencil-alt::before, .wr-services .ui-ux:hover .fa-html5::before, .wr-services .ui-ux:hover .fa-laptop::before, .wr-services .ui-ux:hover .fa-tablet-alt::before, .wr-services .wordpress:hover .fa-code::before, .wr-services .wordpress:hover .fa-wordpress-simple::before, .wr-services .wordpress:hover .fa-pencil-alt::before, .wr-services .wordpress:hover .fa-html5::before, .wr-services .wordpress:hover .fa-laptop::before, .wr-services .wordpress:hover .fa-tablet-alt::before, .wr-services .development:hover .fa-code::before, .wr-services .development:hover .fa-wordpress-simple::before, .wr-services .development:hover .fa-pencil-alt::before, .wr-services .development:hover .fa-html5::before, .wr-services .development:hover .fa-laptop::before, .wr-services .development:hover .fa-tablet-alt::before {
+    color: #ff0036;
+    background-image: none;
+  }
+}
+@media all and (max-width: 455px) {
+  .wr-services .container {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .wr-services .container .services-head h2 {
+    font-size: 25px;
+  }
+  .wr-services .container .services-head h3 {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .wr-services .container .services-head .decoration {
+    margin: 0 auto;
+    margin-top: 98px;
+  }
+  .wr-services .services-main {
+    margin-top: 20px;
+  }
+  .wr-services .first-column p, .wr-services .second-column p {
+    margin-top: 10px;
+  }
+  .wr-services .fa-code::before, .wr-services .fa-wordpress-simple::before, .wr-services .fa-pencil-alt::before, .wr-services .fa-html5::before, .wr-services .fa-laptop::before, .wr-services .fa-tablet-alt::before {
+    font-size: 25px;
+    padding: 12px 17px 13px 13px;
+  }
+  .wr-services .development, .wr-services .wordpress, .wr-services .ui-ux, .wr-services .html-css, .wr-services .applications, .wr-services .responsive-layout {
+    width: 80%;
+    margin: 10px auto;
+  }
+  .wr-services .development, .wr-services .html-css {
+    margin-top: 0;
+  }
+}
+@media all and (max-width: 375px) {
+  .wr-services .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .wr-services .container .services-head h2 {
+    font-size: 20px;
+  }
+  .wr-services .first-column h4, .wr-services .second-column h4 {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 320px) {
+  .wr-services .first-column h4, .wr-services .second-column h4 {
+    font-size: 14px;
+    padding-left: 60px;
+  }
+}
 .wr-bestseller .container {
   align-items: center;
   flex-direction: column;
@@ -2799,6 +2952,7 @@ header .logotip {
   margin-bottom: 0px;
   font-size: 30px;
   margin-top: 0px;
+  text-align: center;
 }
 .wr-bestseller .container span {
   color: #ff0036;
@@ -2809,6 +2963,7 @@ header .logotip {
   margin-bottom: 0px;
   margin-top: 39px;
   font-size: 16px;
+  text-align: center;
 }
 .wr-bestseller .bestseller-main {
   width: 100%;
@@ -2839,8 +2994,7 @@ header .logotip {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 51px;
+  line-height: 51px;
   border: 1px solid #e7e7e7;
   box-sizing: border-box;
   border-top: none;
@@ -2853,7 +3007,7 @@ header .logotip {
   font-size: 20px;
   color: #fff;
   width: 100%;
-  height: 48px;
+  line-height: 48px;
   background-color: #262626;
   margin: 0 auto;
   border-bottom: none;
@@ -2862,12 +3016,10 @@ header .logotip {
   font-family: lato-black;
   font-size: 49.99px;
   color: #262626;
-  position: relative;
   margin: 0 auto;
   text-align: center;
   line-height: 87px;
   background-color: #f2f2f2;
-  height: 87px;
   width: 100%;
   border: none;
 }
@@ -2876,13 +3028,12 @@ header .logotip {
 }
 .wr-bestseller .bestseller-main a {
   text-decoration: none;
-  display: inline-flex;
-  justify-content: center;
+  display: inline-block;
+  text-align: center;
   width: 228px;
-  height: 38px;
+  line-height: 51px;
   font-family: raleway-medium;
   color: #fff;
-  align-items: center;
   background-color: #393939;
   box-sizing: border-box;
   outline: none;
@@ -2893,6 +3044,181 @@ header .logotip {
   border-color: #ff0036;
 }
 
+@media all and (max-width: 1024px) {
+  .wr-bestseller .container .bestseller-head img {
+    left: 24%;
+  }
+  .wr-bestseller .bestseller-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+  }
+  .wr-bestseller .bestseller-main div {
+    margin: 0 31px;
+  }
+  .wr-bestseller .bestseller-main div:nth-last-child(2) {
+    margin-top: 30px;
+  }
+  .wr-bestseller .bestseller-main div:last-child {
+    margin-top: 30px;
+  }
+}
+@media all and (max-width: 768px) {
+  .wr-bestseller .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .wr-bestseller .container .bestseller-head img {
+    top: -69px;
+    left: 15%;
+  }
+  .wr-bestseller .bestseller-main {
+    margin-top: 40px;
+  }
+  .wr-bestseller .bestseller-main div {
+    width: 35%;
+    margin: 0;
+  }
+  .wr-bestseller .bestseller-main .price {
+    line-height: 60px;
+  }
+  .wr-bestseller .bestseller-main ul {
+    width: 100%;
+  }
+  .wr-bestseller .bestseller-main li {
+    line-height: 40px;
+    font-size: 14px;
+  }
+  .wr-bestseller .bestseller-main a {
+    width: 80%;
+  }
+}
+@media all and (max-width: 700px) {
+  .wr-bestseller .container .bestseller-head img {
+    display: none;
+  }
+  .wr-bestseller .bestseller-main .reseller {
+    font-size: 18px;
+  }
+  .wr-bestseller .bestseller-main .price {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .wr-bestseller .bestseller-main li {
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 550px) {
+  .wr-bestseller .bestseller-main div {
+    width: 180px;
+  }
+  .wr-bestseller .bestseller-main .reseller {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .wr-bestseller .bestseller-main .price {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .wr-bestseller .bestseller-main li {
+    line-height: 30px;
+    font-size: 12px;
+  }
+  .wr-bestseller .bestseller-main .order {
+    height: 51px;
+  }
+  .wr-bestseller .bestseller-main a {
+    line-height: 30px;
+  }
+}
+@media all and (max-width: 455px) {
+  .wr-bestseller .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .wr-bestseller .container .bestseller-head h2 {
+    font-size: 25px;
+  }
+  .wr-bestseller .container .bestseller-head h3 {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .wr-bestseller .bestseller-main {
+    margin-top: 20px;
+  }
+  .wr-bestseller .bestseller-main div {
+    width: 180px;
+  }
+  .wr-bestseller .bestseller-main div:nth-last-child(2) {
+    margin-top: 10px;
+  }
+  .wr-bestseller .bestseller-main div:last-child {
+    margin-top: 10px;
+  }
+  .wr-bestseller .bestseller-main .reseller {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .wr-bestseller .bestseller-main .price {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .wr-bestseller .bestseller-main li {
+    line-height: 30px;
+    font-size: 12px;
+  }
+  .wr-bestseller .bestseller-main .order {
+    height: 35px;
+  }
+  .wr-bestseller .bestseller-main a {
+    line-height: 25px;
+  }
+}
+@media all and (max-width: 375px) {
+  .wr-bestseller .container .bestseller-head h2 {
+    font-size: 20px;
+  }
+  .wr-bestseller .bestseller-main div {
+    width: 60%;
+    margin-top: 10px;
+  }
+  .wr-bestseller .bestseller-main div:first-of-type {
+    margin-top: 0;
+  }
+  .wr-bestseller .bestseller-main .reseller {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .wr-bestseller .bestseller-main .price {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .wr-bestseller .bestseller-main span {
+    font-size: 13px;
+  }
+  .wr-bestseller .bestseller-main li {
+    line-height: 23px;
+    font-size: 13px;
+  }
+  .wr-bestseller .bestseller-main .order {
+    height: 35px;
+  }
+  .wr-bestseller .bestseller-main a {
+    line-height: 20px;
+    width: 50%;
+  }
+}
+@media all and (max-width: 320px) {
+  .wr-bestseller .bestseller-main div {
+    width: 70%;
+  }
+  .wr-bestseller .bestseller-main li {
+    font-size: 12px;
+  }
+}
 .wr-twitter {
   background-image: url("../media/last-tweets/background.jpg");
   background-repeat: no-repeat;

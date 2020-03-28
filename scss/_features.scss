@@ -238,7 +238,23 @@
             }
         } 
     }
-}  
+} 
+@media all and (max-width:550px) {
+    .wr-feature {
+        .btns-container {
+            .left-side {
+                .btn-left{
+                    width: 200px;
+                }
+            }
+            .right-side {
+                .btn-right{
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
 @media all and (max-width:455px) {
     .wr-feature {
         a{
@@ -289,7 +305,7 @@
 @media all and (max-width:375px) {
     .wr-feature {
         .container {
-            padding-bottom: 45px;
+            padding: 50px 0 45px 0;
             h2{
                 font-size: 20px;
             }

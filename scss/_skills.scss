@@ -65,6 +65,14 @@
 }
 @media all and (max-width:768px) {
     .wr-skills {
+        .container{
+            padding-bottom: 60px;
+            .skills-head {
+                h2 { 
+                    margin-top: 60px;
+                }
+            }
+        }
         .skills-main{
             flex-wrap: wrap;
             justify-content: space-around;

@@ -15,6 +15,31 @@
             color: #ffffff;
             margin-bottom: 0px;
             margin-top: 21px;
+            align-items: center;
+        }
+    }
+}
+@media all and (max-width:768px) {  
+    .wr-twitter {
+        .container {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            p {
+                width: 90%;
+            }
+        }
+    }
+}
+@media all and (max-width:455px) { 
+    .wr-twitter {
+        background-image: none;
+        background-color: #262626;
+        .container {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            p {
+                font-size: 14px;
+            }
         }
     }
 }

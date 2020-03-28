@@ -3238,8 +3238,31 @@ header .logotip {
   color: #ffffff;
   margin-bottom: 0px;
   margin-top: 21px;
+  align-items: center;
 }
 
+@media all and (max-width: 768px) {
+  .wr-twitter .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .wr-twitter .container p {
+    width: 90%;
+  }
+}
+@media all and (max-width: 455px) {
+  .wr-twitter {
+    background-image: none;
+    background-color: #262626;
+  }
+  .wr-twitter .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .wr-twitter .container p {
+    font-size: 14px;
+  }
+}
 .wr-blog .container {
   align-items: center;
   flex-direction: column;
@@ -3396,10 +3419,9 @@ header .logotip {
   color: #fff;
   outline: none;
 }
-.wr-follow ul .fa-facebook-f {
+.wr-follow ul .fa-facebook-f, .wr-follow ul .fa-twitter, .wr-follow ul .fa-pinterest-p {
   font-size: 20px;
   box-sizing: border-box;
-  padding: 24px 31px 24px 31px;
   color: #ff0036;
   text-align: center;
   background-image: url("../media/follow/icon-back.png");
@@ -3407,71 +3429,90 @@ header .logotip {
   background-repeat: no-repeat;
   position: absolute;
   top: -103px;
+}
+.wr-follow ul .fa-facebook-f {
+  padding: 24px 31px 24px 31px;
   left: -17px;
 }
 .wr-follow ul .fa-twitter {
-  font-size: 20px;
-  box-sizing: border-box;
   padding: 24px 27px 24px 28px;
-  color: #ff0036;
-  text-align: center;
-  background-image: url("../media/follow/icon-back.png");
-  background-size: 75px;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -103px;
   left: -15px;
 }
 .wr-follow ul .fa-pinterest-p {
-  font-size: 20px;
-  box-sizing: border-box;
   padding: 24px 30px 24px 30px;
-  color: #ff0036;
-  text-align: center;
-  background-image: url("../media/follow/icon-back.png");
-  background-size: 75px;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -103px;
   left: -15px;
 }
-.wr-follow ul .google {
+.wr-follow ul .google, .wr-follow ul .google-active {
   position: absolute;
   box-sizing: border-box;
   padding: 27px 29px 24px 30px;
   color: #fff;
   text-align: center;
-  background-image: url("../media/follow/icon-back.png");
   background-size: 75px;
   background-repeat: no-repeat;
   top: -103px;
   left: -15px;
+}
+.wr-follow ul .google {
+  background-image: url("../media/follow/icon-back.png");
+}
+.wr-follow ul .google-active {
+  background-image: url("../media/follow/icon-back-active.png");
 }
 .wr-follow ul .google-hover {
   display: none;
 }
-.wr-follow ul .google-active {
-  position: absolute;
-  box-sizing: border-box;
-  padding: 27px 29px 24px 30px;
-  text-align: center;
-  background-image: url("../media/follow/icon-back-active.png");
-  background-size: 75px;
-  background-repeat: no-repeat;
-  top: -103px;
-  left: -15px;
-}
-.wr-follow ul .fa-facebook-f:hover, .wr-follow ul .fa-twitter:hover, .wr-follow ul .fa-pinterest-p:hover {
+.wr-follow ul .facebook:hover .fa-facebook-f, .wr-follow ul .twitter:hover .fa-twitter, .wr-follow ul .pinterest:hover .fa-pinterest-p {
   color: #fff;
   background-image: url("../media/follow/icon-back-active.png");
   background-size: 76px;
   cursor: pointer;
 }
-.wr-follow ul .google-image:hover .google-hover {
+.wr-follow ul .google-plus:hover .google-hover {
   display: block;
   cursor: pointer;
 }
 
+@media all and (max-width: 768px) {
+  .wr-follow .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media all and (max-width: 455px) {
+  .wr-follow .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .wr-follow .container h2 {
+    font-size: 25px;
+  }
+  .wr-follow ul {
+    margin-top: 50px;
+  }
+  .wr-follow ul li {
+    margin: 0 15px;
+  }
+  .wr-follow ul .google, .wr-follow ul .google-active {
+    background-image: none;
+    top: -50px;
+  }
+  .wr-follow ul .fa-facebook-f, .wr-follow ul .fa-twitter, .wr-follow ul .fa-pinterest-p {
+    font-size: 18px;
+    color: #ff0036;
+    background-image: none;
+    top: -50px;
+  }
+  .wr-follow ul .facebook:hover .fa-facebook-f, .wr-follow ul .twitter:hover .fa-twitter, .wr-follow ul .pinterest:hover .fa-pinterest-p {
+    color: #fff;
+    background-image: none;
+  }
+}
+@media all and (max-width: 375px) {
+  .wr-follow .container h2 {
+    font-size: 20px;
+  }
+}
 .wr-fine-us .container {
   align-items: center;
   flex-direction: column;
@@ -3613,18 +3654,26 @@ header .logotip {
 .wr-footer .container {
   justify-content: center;
   align-items: center;
+  padding-top: 30px;
+  padding-bottom: 26px;
 }
 .wr-footer .container a {
-  margin-top: 30px;
-  margin-bottom: 26px;
-  display: block;
-  background-image: url("../media/footer/logo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 15;
   width: 120px;
   height: 23px;
   outline: none;
+}
+
+@media all and (max-width: 768px) {
+  .wr-footer .container {
+    padding-top: 15px;
+    padding-bottom: 16px;
+  }
+}
+@media all and (max-width: 375px) {
+  .wr-footer .container {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,17 +3,28 @@
     .container {
         justify-content: center;
         align-items: center;
+        padding-top: 30px;
+        padding-bottom: 26px;
         a { 
-            margin-top: 30px;
-            margin-bottom: 26px;
-            display: block;
-            background-image: url('../media/footer/logo.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            z-index: 15;
             width: 120px;
             height: 23px;
             outline: none;
         }
+    }
+}
+@media all and (max-width:768px) {
+    .wr-footer {
+        .container {
+            padding-top: 15px;
+            padding-bottom: 16px;
+        }   
+    }
+}
+@media all and (max-width:375px) {
+    .wr-footer {
+        .container {
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }   
     }
 }

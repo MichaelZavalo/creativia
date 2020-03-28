@@ -760,7 +760,7 @@ header .logotip {
     display: none;
   }
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 455px) {
   .wr-about .container {
     justify-content: center;
     align-items: center;
@@ -1361,7 +1361,7 @@ header .logotip {
     left: 46%;
   }
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 455px) {
   .wr-protfolio {
     padding-bottom: 80px;
   }
@@ -1699,7 +1699,7 @@ header .logotip {
     display: none;
   }
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 455px) {
   .wr-feature a {
     font-size: 12px;
   }
@@ -2089,7 +2089,7 @@ header .logotip {
     font-size: 20px;
   }
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 455px) {
   .wr-clients .container {
     padding-top: 30px;
     padding-bottom: 40px;
@@ -2562,7 +2562,7 @@ header .logotip {
     margin-top: 20px;
   }
 }
-@media all and (max-width: 425px) {
+@media all and (max-width: 455px) {
   .wr-skills .container {
     flex-direction: column;
     padding-bottom: 50px;

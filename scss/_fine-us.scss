@@ -24,6 +24,7 @@
         margin-bottom: 0px;
         font-size: 30px;
         margin-top: 0px;
+        text-align: center;
     }
     span {
         color: #ff0036;
@@ -34,6 +35,7 @@
         margin-bottom: 0px;
         margin-top: 39px;
         font-size: 16px;
+        text-align: center;
     }
     .container-main {
         background-image: url('../media/fine-us/background.jpg');
@@ -132,5 +134,131 @@
     .submit:hover {
         cursor: pointer;
         text-shadow: 0px 0px 6px rgba(223, 225, 142, 1);
+    }
+}
+@media all and (max-width:1024px) {
+    .wr-fine-us{
+        .fine-us-head {
+            img {
+            position: absolute;
+            top: -112px;
+            left: 24%;
+            }
+        }
+        .container-main {
+            padding: 100px 15px 0 15px;
+        }
+    } 
+}
+@media all and (max-width:768px) {
+    .wr-fine-us{
+        .container {
+            padding: 60px 15px;
+        }
+        .fine-us-head {
+            img {
+            top: -69px;
+            left: 15%;
+            }
+        }
+        .container-main {
+            align-items: center;
+            flex-direction: column-reverse;
+            justify-content: center;
+            padding: 50px 15px 0 15px;
+            .info{
+                margin-bottom: 10px;
+                margin-left: 50%;
+            }
+        }
+        .fine-us-form {
+            margin-bottom: 30px;
+        }
+    } 
+}
+@media all and (max-width:700px) {
+    .wr-fine-us{
+        .fine-us-head {
+            img {
+            display: none;
+            }
+        }
+    }
+}
+@media all and (max-width:550px) {
+    .wr-fine-us {
+        overflow-x: hidden;
+    }
+}
+@media all and (max-width:455px) {
+    .wr-fine-us {
+        .container {
+            padding: 60px 15px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+        h3 {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .container-main {
+            background-image: none;
+            background-color: #f4f3f2;
+            padding: 30px 0 10px 0;
+            .info {
+                margin: 0 auto;
+                background-image: none;
+                background-color: #262626;
+                width: 50%;
+                height: 40%;
+            }
+            ul {
+                padding: 20px 0 20px 5px;
+            }
+        }
+        .fine-us-form {
+            margin-bottom: 30px;
+            padding: 25px 25px 20px 25px;
+            height: 100%;
+            width: 95%;
+            align-items: center;
+        } 
+        form {
+            width: 100%;
+            margin-top: 20px;
+        }
+        input:last-of-type {
+            margin-top: 15px;
+        }
+        .submit {
+            font-size: 15px;
+            margin: 0 auto;
+        }
+    } 
+}
+@media all and (max-width:375px) {
+    .wr-fine-us{
+        h2 {
+            font-size: 20px;
+        }
+        .container-main {
+            .info {
+                width: 70%;
+                height: 40%;
+            }
+            ul {
+                align-items: center;
+                padding: 10px 0 10px 5px;
+            }
+        }
+        .fine-us-form {
+            p {
+                font-size: 16px;
+            }
+        } 
+        .submit {
+            font-size: 14px;
+        }
     }
 }

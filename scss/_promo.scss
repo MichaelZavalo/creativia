@@ -280,7 +280,7 @@ header {
             width: 100%;
         }
     }
-    .wr-promo-active{
+    .wr-promo-active {
         transform: translateX(-30%);
         z-index: 20;
     }
@@ -288,32 +288,41 @@ header {
         position: fixed;
         right: 0;
         top: 0;
-        height: 200px;
+        height: 250px;
         width: 30%;
         background-color: #fff;
         transition-duration: 1s;
         transform: translateX(100%);
         z-index: 50;
         nav {
+            width: 50%;
             height: 100%;
             padding: 0;
+            margin: 0 auto;
             ul {
                 display: flex;
-                align-items: center;
                 flex-direction: column;
-                justify-content: space-around;
-                height: 100%;
-                list-style: none;
-                margin: 0;
-                padding: 0;
             }
             li {
-                margin:0;
+                height: 32px;
+                margin:0 auto;
             }
             a {  
-                font-size: 12px;
+                font-size: 14px;
                 color: #a4a4a4;
                 outline: none;
+            }
+            a:hover {
+                color: #ff0036;
+                cursor: pointer;
+            }
+            li:hover:before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 25%;
+                width: calc(100%/2);
+                border: 1px solid #ff0036;
             }
         }   
         .menu-btn {
@@ -365,6 +374,9 @@ header {
         transform: translateX(0%);
     }
     .slider {
+        .slick-prev, .slick-next {
+            position: fixed;
+        }
         h1 {
             font-size: 25px;
         }
@@ -396,9 +408,9 @@ header {
         .slick-track {
             margin: 0 2px;
         }
-        .slick-prev, .slick-next {
-            position: fixed;
-        }
+    }
+    .menu-block {   
+        width: 40%;
     }
 }
 @media all and (max-width:320px) {
@@ -423,5 +435,8 @@ header {
     }
     .btn-promo {
     width: 95px;
+    }
+    .menu-block {   
+        width: 45%;
     }
 }

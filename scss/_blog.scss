@@ -169,6 +169,15 @@
         }
     }
 }
+@media all and (max-width:900px) {
+    .wr-blog {
+        .blog-head {
+            img {
+               left: 20%;
+            }
+        }
+    }
+}
 @media all and (max-width:768px) {
     .wr-blog {
         .container {

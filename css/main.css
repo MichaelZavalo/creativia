@@ -1456,7 +1456,7 @@ header .logotip {
   }
   .container-portfolio .money .active-item p, .container-portfolio .bank .active-item p, .container-portfolio .flower .active-item p, .container-portfolio .cards .active-item p, .container-portfolio .calculator .active-item p, .container-portfolio .converter .active-item p, .container-portfolio .wallet .active-item p, .container-portfolio .check .active-item p {
     top: 52%;
-    left: 32%;
+    left: 20%;
     font-size: 13px;
   }
   .container-portfolio .money .active-item img, .container-portfolio .bank .active-item img, .container-portfolio .flower .active-item img, .container-portfolio .cards .active-item img, .container-portfolio .calculator .active-item img, .container-portfolio .converter .active-item img, .container-portfolio .wallet .active-item img, .container-portfolio .check .active-item img {
@@ -1667,8 +1667,6 @@ header .logotip {
     font-size: 16px;
   }
   .wr-feature .container .feature-head img {
-    position: absolute;
-    top: -109px;
     left: 24%;
   }
   .wr-feature .btns-container {
@@ -1694,6 +1692,11 @@ header .logotip {
     width: 150px;
     height: 40px;
     margin-top: 150px;
+  }
+}
+@media all and (max-width: 900px) {
+  .wr-feature .container .feature-head img {
+    left: 20%;
   }
 }
 @media all and (max-width: 768px) {
@@ -2385,6 +2388,11 @@ header .logotip {
   }
   .wr-teamwork .teamwork-main .doe, .wr-teamwork .teamwork-main .de {
     margin-top: 30px;
+  }
+}
+@media all and (max-width: 900px) {
+  .wr-teamwork .container .teamwork-head img {
+    left: 20%;
   }
 }
 @media all and (max-width: 768px) {
@@ -3083,6 +3091,11 @@ header .logotip {
     margin-top: 30px;
   }
 }
+@media all and (max-width: 900px) {
+  .wr-bestseller .container .bestseller-head img {
+    left: 20%;
+  }
+}
 @media all and (max-width: 768px) {
   .wr-bestseller .container {
     padding-top: 60px;
@@ -3444,6 +3457,11 @@ header .logotip {
   .wr-blog .blog-head img {
     top: -110px;
     left: 24%;
+  }
+}
+@media all and (max-width: 900px) {
+  .wr-blog .blog-head img {
+    left: 20%;
   }
 }
 @media all and (max-width: 768px) {
@@ -3851,6 +3869,11 @@ header .logotip {
     padding: 100px 15px 0 15px;
   }
 }
+@media all and (max-width: 900px) {
+  .wr-fine-us .fine-us-head img {
+    left: 20%;
+  }
+}
 @media all and (max-width: 768px) {
   .wr-fine-us .container {
     padding: 60px 15px;
@@ -3961,11 +3984,54 @@ header .logotip {
   height: 23px;
   outline: none;
 }
+.wr-footer .back-to-top {
+  position: fixed;
+  right: 35px;
+  bottom: 80px;
+  width: 50px;
+  height: 50px;
+  border-color: transparent;
+  border-radius: 50%;
+  background-color: #ff0036;
+  display: none;
+  z-index: 99;
+}
+.wr-footer .back-to-top::before, .wr-footer .back-to-top::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wr-footer .back-to-top::before {
+  width: 5px;
+  height: 25px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #fff;
+}
+.wr-footer .back-to-top::after {
+  width: 15px;
+  height: 15px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-top: 5px solid #fff;
+  border-left: 5px solid #fff;
+}
+.wr-footer .back-to-top:hover, .wr-footer .back-to-top:focus {
+  outline: none;
+  filter: brightness(1.5);
+  cursor: pointer;
+}
 
 @media all and (max-width: 768px) {
   .wr-footer .container {
     padding-top: 15px;
     padding-bottom: 16px;
+  }
+}
+@media all and (max-width: 700px) {
+  .wr-footer .back-to-top {
+    bottom: -200px;
   }
 }
 @media all and (max-width: 375px) {

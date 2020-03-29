@@ -38,22 +38,34 @@ $('.menu-block').toggleClass('menu-block-active');
 $('.wr-promo').toggleClass('.wr-promo-active'); 
 })
 
-/*coll.addEventListener('click', function () {
-    document.querySelector('.collapsible').style.backgroundColo;
-});
+const anchors = document.querySelectorAll('a[href*="#"]')
 
-function expandText(e) {
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    const blockID = anchor.getAttribute('href').substr(1)
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
 
-    // 1. Получить элемент который нужно отобразить или спрятать
-    var btn = e.target;
-    var wrapper = btn.closest('.expand');
-    var text = wrapper.querySelector('.content');
+function backToTop() {
+    let button = $ ('.back-to-top');
+    $(window).on('scroll', () => {
+        if ($(this).scrollTop() >= 1500 ) {
+            button.fadeIn();
+        }
+        else {
+            button.fadeOut();
+        }
+    });
 
-    // 2. Показать или спрятать элемент
-    if (text.style.display !== 'none') {
-        text.style.display = 'none';
-    } else {
-        text.style.display = 'block';
-    }
-    
-}*/
+    button.on('click',(e) => {
+        e.preventDefault();
+        $('html').animate({scrollTop:0}, 1000 );
+    })
+}
+
+backToTop();

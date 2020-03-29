@@ -150,6 +150,15 @@
         }
     } 
 }
+@media all and (max-width:900px) {
+    .wr-fine-us {
+        .fine-us-head {
+            img {
+                left: 20%;
+            }
+        }
+    }
+}
 @media all and (max-width:768px) {
     .wr-fine-us{
         .container {

@@ -149,8 +149,6 @@
         .container {
             .feature-head {
                 img {
-                    position: absolute;
-                    top: -109px;
                     left: 24%;
                 }
             }
@@ -182,6 +180,17 @@
             width: 150px;
             height: 40px;
             margin-top: 150px;
+        }
+    }
+}
+@media all and (max-width:900px) {
+    .wr-feature {
+        .container {
+            .feature-head {
+                img {
+                    left: 20%;
+                }
+            }
         }
     }
 }

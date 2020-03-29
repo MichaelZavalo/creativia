@@ -144,6 +144,17 @@
         }
     }   
 }
+@media all and (max-width:900px) {
+    .wr-bestseller {
+        .container {
+            .bestseller-head {
+                img {
+                    left: 20%;
+                }
+            }
+        }
+    }
+}
 @media all and (max-width:768px) {
     .wr-bestseller {
         .container {
